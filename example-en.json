@@ -1,0 +1,56 @@
+{
+    "dropdown-toggle": "EN",
+    "data-title": "Customer Preference Form",
+    "card-text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "name": {
+        "label": "Full Name"
+    },
+    "email": {
+        "label": "Email"
+    },
+    "logo": {
+        "label": "Logo Name",
+        "small": "The desired name for your logo"
+    },
+    "slogan": {
+        "label": "Do you have a slogan?",
+        "option1": "-- Select one --",
+        "option2": "Ya",
+        "option3": "Tidak"
+    },
+    "slogan-next": {
+        "label": "Slogan Name",
+        "small": "The slogan you want to add to your logo"
+    },
+    "industry": {
+        "label": "What your industry?",
+        "option1": "-- Select one --",
+        "option2": "Food",
+        "option3": "Finance",
+        "option4": "Travel",
+        "option5": "Agriculture",
+        "option6": "Mining",
+        "option7": "Other"
+    },
+    "feelings": {
+        "label": "Choose a feeling for your logo",
+        "label1": "Modern",
+        "label2": "Futuristic",
+        "label3": "Traditional"
+    },
+    "product": {
+        "label": "Describe your audience, organization or product"
+    },
+    "competitor": {
+        "label": "List the top 3 competitors in your type of industry",
+        "small": "If possible, include their links as well"
+    },
+    "use-logo": {
+        "label": "Where will you use the logo?",
+        "label1": "Merchandise (mug, T-shirt, etc.)",
+        "label2": "Online (website, online advertising, etc.)",
+        "label3": "Print (business card, letterheads, brochures, etc.)",
+        "label4": "Signage (shops, billboards, etc.)",
+        "label5": "Television or screen"
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "dropdown-toggle": "ID",
+    "data-title": "Form Preferensi Pelanggan",
+    "card-text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "name": {
+        "label": "Nama Lengkap"
+    },
+    "email": {
+        "label": "Email"
+    },
+    "logo": {
+        "label": "Nama Logo",
+        "small": "Nama yang diinginkan untuk logo Anda"
+    },
+    "slogan": {
+        "label": "Apakah Anda memiliki slogan?",
+        "option1": "-- Pilih salah satu --",
+        "option2": "Ya",
+        "option3": "Tidak"
+    },
+    "slogan-next": {
+        "label": "Nama Slogan",
+        "small": "Slogan yang ingin dilengkapi di logo Anda"
+    },
+    "industry": {
+        "label": "Apa industri Anda?",
+        "option1": "-- Pilih salah satu --",
+        "option2": "Makanan",
+        "option3": "Keuangan",
+        "option4": "Pariwisata",
+        "option5": "Pertanian",
+        "option6": "Pertambangan",
+        "option7": "Lainnya"
+    },
+    "feelings": {
+        "label": "Pilih perasaan pada logo Anda",
+        "label1": "Modern",
+        "label2": "Futuristik",
+        "label3": "Tradisional"
+    },
+    "product": {
+        "label": "Jelaskan tentang audiens, organisasi atau produk Anda"
+    },
+    "competitor": {
+        "label": "Tuliskan 3 kompetitor atas pada jenis industri Anda",
+        "small": "Jika memungkinkan, tuliskan juga tautan kompetitor tersebut"
+    },
+    "use-logo": {
+        "label": "Dimana Anda akan menggunakan logo?",
+        "label1": "Barang dagangan (cangkir, kaos, dll.)",
+        "label2": "Online (situs web, iklan online, dll.)",
+        "label3": "Cetak (kartu nama, kop surat, brosur, dll.)",
+        "label4": "Rambu (toko, papan iklan, dll.)",
+        "label5": "Televisi atau layar"
+    }
+}
