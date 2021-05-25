@@ -6,17 +6,12 @@ body {
     padding-top: 9.5rem;
 }
 
-.section-desktop {
-    background-color: grey !important;
-    padding-bottom: 2rem !important;
-}
-
 .navbar-dark {
-    background-color: grey !important;
+    background-color: #0c1e2d !important;
 }
 
 .card-desktop {
-    top: -30px !important;
+    border-left: 3px solid #0c1e2d !important;
 }
 
 .dropdown-item:focus {
@@ -41,6 +36,7 @@ body {
 .btn-primary:hover {
     background-color: #243442 !important;
 }
+
 
 .animated-icon {
     width: 30px;
@@ -133,4 +129,9 @@ body {
 
 textarea {
     resize: none !important;
+}
+
+.mandatory:after {
+    content: " *";
+    color: #dc3545 !important;
 }
