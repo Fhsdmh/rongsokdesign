@@ -28,8 +28,8 @@
     <div class="section-desktop">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <!-- <img src="assets/img/logo.svg" alt="logo" width="30" height="32" class="align-bottom"> -->
+                <a class="navbar-brand fw-bold" href="#">
+                    <img src="assets/img/logo.svg" alt="logo" width="60" height="60" class="align-middle">
                     Rongsok Design
                 </a>
                 <div class="dropdown">
@@ -125,19 +125,19 @@
             <div class="card-body">
                 <div class="mb-3">
                     <label class="form-label mandatory d-block" data-localize="feelings.label"></label>
-                    <div class="form-check">
+                    <div class="form-check req_check">
                         <input class="form-check-input" type="checkbox" value="modern">
                         <label class="form-check-label" for="modern" data-localize="feelings.label1"></label>
                     </div>
-                    <div class="form-check">
+                    <div class="form-check req_check">
                         <input class="form-check-input" type="checkbox" value="futuristik">
                         <label class="form-check-label" for="futuristik" data-localize="feelings.label2"></label>
                     </div>
-                    <div class="form-check">
+                    <div class="form-check req_check">
                         <input class="form-check-input" type="checkbox" value="tradisional">
                         <label class="form-check-label" for="tradisional" data-localize="feelings.label3"></label>
                     </div>
-                    <div class="form-check">
+                    <div class="form-check req_check">
                         <input class="form-check-input" type="checkbox" value="tradisional">
                         <label class="form-check-label" for="sederhana" data-localize="feelings.label4"></label>
                     </div>
@@ -196,25 +196,83 @@
         </div>
         <div class="card col-md-6 mx-auto shadow-sm mb-3">
             <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label mandatory" data-localize="type-logo.label"></label>
-                    <input type="checkbox" class="btn-check" id="btn-check-outlined" value="wordmark"
-                        autocomplete="off">
-                    <label class="btn btn-outline-secondary card col-md-3 mb-2" for="btn-check-outlined">
-                        <img src="assets/img/waste.jpg" alt="tes" width="30" height="32" class="d-block mx-auto">
-                        Wordmark
-                    </label>
-                    <input type="checkbox" class="btn-check" id="btn-check-outlined" value="wordmark"
-                        autocomplete="off">
-                    <label class="btn btn-outline-secondary card col-md-3 mb-2" for="btn-check-outlined">
-                        <img src="assets/img/waste.jpg" alt="tes" width="30" height="32" class="d-block mx-auto">
-                        Wordmark
-                    </label>
+                <label class="form-label mandatory" data-localize="type-logo.label"></label>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check p-0">
+                            <input class="btn-check" type="radio" name="type_logo" id="letter">
+                            <label class="btn btn-outline-secondary card mb-4" for="letter">
+                                <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
+                                    class="d-block mx-auto">
+                                Letter
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check p-0">
+                            <input class="btn-check" type="radio" name="type_logo" id="watermark">
+                            <label class="btn btn-outline-secondary card mb-4" for="watermark">
+                                <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
+                                    class="d-block mx-auto">
+                                Watermark
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check p-0">
+                            <input class="btn-check" type="radio" name="type_logo" id="pictorial">
+                            <label class="btn btn-outline-secondary card mb-4" for="pictorial">
+                                <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
+                                    class="d-block mx-auto">
+                                Pictorial Marks
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check p-0">
+                            <input class="btn-check" type="radio" name="type_logo" id="abstract">
+                            <label class="btn btn-outline-secondary card mb-4" for="abstract">
+                                <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
+                                    class="d-block mx-auto">
+                                Abstract Marks
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check p-0">
+                            <input class="btn-check" type="radio" name="type_logo" id="mascot">
+                            <label class="btn btn-outline-secondary card mb-4" for="mascot">
+                                <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
+                                    class="d-block mx-auto">
+                                Mascot
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check p-0">
+                            <input class="btn-check" type="radio" name="type_logo" id="combination">
+                            <label class="btn btn-outline-secondary card mb-4" for="combination">
+                                <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
+                                    class="d-block mx-auto">
+                                Combination Mark
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check p-0">
+                            <input class="btn-check" type="radio" name="type_logo" id="emblem">
+                            <label class="btn btn-outline-secondary card mb-4" for="emblem">
+                                <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
+                                    class="d-block mx-auto">
+                                Emblem
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-md-6 mx-auto mb-3 text-center">
-            <button class="btn btn-primary mt-3 rounded-pill w-25" data-localize="submit.label" id="btn-submit"
+            <button class="btn btn-primary mt-3 rounded-pill w-50" data-localize="submit.label" id="btn-submit"
                 onclick="submit()"></button>
         </div>
     </div>
@@ -311,17 +369,15 @@
         }
 
         function submit() {
-            // var tema = $("#id_2").val();
-            var full_name = $("#full_name").val();
-            var email = $("#email").val();
-            var logo_name = $("#logo_name").val();
-            var slogan = $("#slogan :selected").text();
-            var slogan_next = $("#slogan_next").val();
-            var industry = $("#industry :selected").text();
-            var product = $("#product").val();
-            var competitor = $("#competitor").val();
+            var full_name = $("#id_1").val();
+            var email = $("#id_2").val();
+            var logo_name = $("#id_3").val();
+            var slogan = $("#id_4").val();
+            var slogan_next = $("#id_5").val();
+            var industry = $("#id_6").val();
+            var product = $("#id_7").val();
+            var competitor = $("#id_8").val();
             var data = {
-                // tema: tema,
                 full_name: full_name,
                 email: email,
                 logo_name: logo_name,
@@ -332,9 +388,27 @@
                 competitor: competitor
             };
 
+            var verifyPaymentType = function () {
+                var checkboxes = $('.req_check');
+                var inputs = checkboxes.find('input');
+                var first = inputs.first()[0];
+
+                inputs.on('change', function () {
+                    this.setCustomValidity('');
+                });
+
+                // first.setCustomValidity(checkboxes.find('input:checked').length === 0 ? 'Choose one' : '');
+
+                if (checkboxes.find('input:checked').length === 0) {
+                    alert("tes");
+                }
+
+            }
+
             $(".required:visible").each(function () {
-                if ($(this).val() == "") {
-                    $(this).focus();
+                var id = $(this).attr("id");
+                if (!$("#" + id).val()) {
+                    $("#" + id).focus();
                     $.alert({
                         icon: 'fas fa-exclamation-triangle',
                         title: 'Gagal!',
@@ -374,7 +448,7 @@
                                     'Mengirimkan... <i class="fas fa-spinner fa-pulse fa-fw">').attr(
                                     "disabled", true);
                                 // sendWithPostData("process.php", data);
-                                // console.log(data);
+                                console.log(data);
                             }
                         }
                     }
