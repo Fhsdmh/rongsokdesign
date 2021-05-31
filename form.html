@@ -17,7 +17,7 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css"> -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="shortcut icon" href="assets/img/favicon.ico" />
 
@@ -30,7 +30,7 @@
             <div class="container">
                 <a class="navbar-brand fw-bold" href="#">
                     <img src="assets/img/logo.svg" alt="logo" width="60" height="60" class="align-middle">
-                    Rongsok Design
+                    Navbar
                 </a>
                 <div class="dropdown">
                     <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown"
@@ -59,222 +59,231 @@
                 <p class="card-text" data-localize="card-text3"></p>
             </div>
         </div>
-        <div class="card col-md-6 mx-auto shadow-sm mb-3">
-            <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label mandatory" data-localize="name.label"></label>
-                    <input type="text" class="form-control required" id="id_1" name="full_name"
-                        data-localize="name.placeholder" value="" placeholder="Masukkan nama lengkap Anda">
-                </div>
-            </div>
-        </div>
-        <div class="card col-md-6 mx-auto shadow-sm mb-3">
-            <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label mandatory" data-localize="email.label"></label>
-                    <input type="email" class="form-control required" id="id_2" name="email"
-                        data-localize="email.placeholder" value="" placeholder="Masukkan email Anda">
-                </div>
-            </div>
-        </div>
-        <div class="card col-md-6 mx-auto shadow-sm mb-3">
-            <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label mandatory" data-localize="logo.label"></label>
-                    <input type="text" class="form-control required" id="id_3" name="logo_name"
-                        data-localize="logo.placeholder" value="" placeholder="Masukkan nama logo Anda">
-                    <div class="form-text" data-localize="logo.small"></div>
-                </div>
-            </div>
-        </div>
-        <div class="card col-md-6 mx-auto shadow-sm mb-3">
-            <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label mandatory" data-localize="slogan.label"></label>
-                    <select class="form-select required" id="id_4" name="slogan">
-                        <option value="" selected hidden disabled data-localize="slogan.option1"></option>
-                        <option value="Ya" data-localize="slogan.option2"></option>
-                        <option value="Tidak" data-localize="slogan.option3"></option>
-                    </select>
-                </div>
-                <div class="mb-3" id="slogan_next" hidden>
-                    <label class="form-label mandatory" data-localize="slogan-next.label"></label>
-                    <textarea class="form-control required" rows="3" id="id_5" data-localize="slogan-next.placeholder"
-                        placeholder="Masukkan slogan Anda" name="slogan_next"></textarea>
-                    <div class="form-text" data-localize="slogan-next.small"></div>
-                </div>
-            </div>
-        </div>
-        <div class="card col-md-6 mx-auto shadow-sm mb-3">
-            <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label mandatory" data-localize="industry.label"></label>
-                    <select class="form-select required" name="industry" id="id_6">
-                        <option value="" selected hidden disabled data-localize="industry.option1"></option>
-                        <option value="Makanan" data-localize="industry.option2"></option>
-                        <option value="Keuangan" data-localize="industry.option3"></option>
-                        <option value="Pariwisata" data-localize="industry.option4"></option>
-                        <option value="Pertanian" data-localize="industry.option5"></option>
-                        <option value="Pertambangan" data-localize="industry.option6"></option>
-                        <option value="Lainnya" data-localize="industry.option7"></option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="card col-md-6 mx-auto shadow-sm mb-3">
-            <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label mandatory d-block" data-localize="feelings.label"></label>
-                    <div class="form-check req_check">
-                        <input class="form-check-input" type="checkbox" value="modern">
-                        <label class="form-check-label" for="modern" data-localize="feelings.label1"></label>
-                    </div>
-                    <div class="form-check req_check">
-                        <input class="form-check-input" type="checkbox" value="futuristik">
-                        <label class="form-check-label" for="futuristik" data-localize="feelings.label2"></label>
-                    </div>
-                    <div class="form-check req_check">
-                        <input class="form-check-input" type="checkbox" value="tradisional">
-                        <label class="form-check-label" for="tradisional" data-localize="feelings.label3"></label>
-                    </div>
-                    <div class="form-check req_check">
-                        <input class="form-check-input" type="checkbox" value="tradisional">
-                        <label class="form-check-label" for="sederhana" data-localize="feelings.label4"></label>
+        <form name="rongsok-design-form" id="rongsok-design-form">
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label mandatory" data-localize="name.label"></label>
+                        <input type="text" class="form-control" name="full_name" data-localize="name.placeholder"
+                            placeholder="Masukkan nama lengkap Anda" required>
                     </div>
                 </div>
-                <div class="form-text" data-localize="feelings.small"></div>
             </div>
-        </div>
-        <div class="card col-md-6 mx-auto shadow-sm mb-3">
-            <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label mandatory" data-localize="product.label"></label>
-                    <textarea class="form-control required" rows="3" id="id_7" name="product"
-                        data-localize="product.placeholder"
-                        placeholder="Jelaskan secara singkat, jelas dan padat"></textarea>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label mandatory" data-localize="email.label"></label>
+                        <input type="email" class="form-control" name="email" data-localize="email.placeholder"
+                            placeholder="Masukkan email Anda" required>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card col-md-6 mx-auto shadow-sm mb-3">
-            <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label mandatory" data-localize="competitor.label"></label>
-                    <textarea class="form-control required" rows="3" id="id_8" name="competitor"
-                        data-localize="competitor.placeholder"
-                        placeholder="Tuliskan secara singkat, jelas dan padat"></textarea>
-                    <div class="form-text" data-localize="competitor.small"></div>
-                </div>
-            </div>
-        </div>
-        <div class="card col-md-6 mx-auto shadow-sm mb-3">
-            <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label mandatory d-block" data-localize="use-logo.label"></label>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="merchandise">
-                        <label class="form-check-label" for="merchandise" data-localize="use-logo.label1"></label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="online">
-                        <label class="form-check-label" for="online" data-localize="use-logo.label2"></label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="cetak">
-                        <label class="form-check-label" for="cetak" data-localize="use-logo.label3"></label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="signage">
-                        <label class="form-check-label" for="signage" data-localize="use-logo.label4"></label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="televisi">
-                        <label class="form-check-label" for="televisi" data-localize="use-logo.label5"></label>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label mandatory" data-localize="logo.label"></label>
+                        <input type="text" class="form-control" name="logo_name" data-localize="logo.placeholder"
+                            placeholder="Masukkan nama logo Anda" required>
+                        <div class="form-text" data-localize="logo.small"></div>
                     </div>
                 </div>
-                <div class="form-text" data-localize="feelings.small"></div>
             </div>
-        </div>
-        <div class="card col-md-6 mx-auto shadow-sm mb-3">
-            <div class="card-body">
-                <label class="form-label mandatory" data-localize="type-logo.label"></label>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-check p-0">
-                            <input class="btn-check" type="radio" name="type_logo" id="letter">
-                            <label class="btn btn-outline-secondary card mb-4" for="letter">
-                                <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
-                                    class="d-block mx-auto">
-                                Letter
-                            </label>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label mandatory" data-localize="slogan.label"></label>
+                        <select class="form-select" name="slogan" id="slogan" required>
+                            <option value="" selected hidden disabled data-localize="slogan.option1"></option>
+                            <option value="Ya" data-localize="slogan.option2"></option>
+                            <option value="Tidak" data-localize="slogan.option3"></option>
+                        </select>
+                    </div>
+                    <div class="mb-3" id="slogan_next" hidden>
+                        <label class="form-label mandatory" data-localize="slogan-next.label"></label>
+                        <textarea class="form-control" id="slogan_txt" rows="3" data-localize="slogan-next.placeholder"
+                            placeholder="Masukkan slogan Anda" name="slogan_next"></textarea>
+                        <div class="form-text" data-localize="slogan-next.small"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label mandatory" data-localize="industry.label"></label>
+                        <select class="form-select" name="industry" required>
+                            <option value="" selected hidden disabled data-localize="industry.option1"></option>
+                            <option value="Makanan" data-localize="industry.option2"></option>
+                            <option value="Keuangan" data-localize="industry.option3"></option>
+                            <option value="Pariwisata" data-localize="industry.option4"></option>
+                            <option value="Pertanian" data-localize="industry.option5"></option>
+                            <option value="Pertambangan" data-localize="industry.option6"></option>
+                            <option value="Lainnya" data-localize="industry.option7"></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label mandatory d-block" data-localize="feelings.label"></label>
+                        <div class="form-check">
+                            <input class="form-check-input feelings" name="feelings" type="checkbox" value="modern"
+                                required>
+                            <label class="form-check-label" for="modern" data-localize="feelings.label1"></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input feelings" name="feelings" type="checkbox" value="futuristik"
+                                required>
+                            <label class="form-check-label" for="futuristik" data-localize="feelings.label2"></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input feelings" name="feelings" type="checkbox" value="tradisional"
+                                required>
+                            <label class="form-check-label" for="tradisional" data-localize="feelings.label3"></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input feelings" name="feelings" type="checkbox" value="sederhana"
+                                required>
+                            <label class="form-check-label" for="sederhana" data-localize="feelings.label4"></label>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-check p-0">
-                            <input class="btn-check" type="radio" name="type_logo" id="watermark">
-                            <label class="btn btn-outline-secondary card mb-4" for="watermark">
-                                <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
-                                    class="d-block mx-auto">
-                                Watermark
-                            </label>
+                    <div class="form-text" data-localize="feelings.small"></div>
+                </div>
+            </div>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label mandatory" data-localize="product.label"></label>
+                        <textarea class="form-control" rows="3" name="product" data-localize="product.placeholder"
+                            placeholder="Jelaskan secara singkat, jelas dan padat" required></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label mandatory" data-localize="competitor.label"></label>
+                        <textarea class="form-control" rows="3" name="competitor" data-localize="competitor.placeholder"
+                            placeholder="Tuliskan secara singkat, jelas dan padat" required></textarea>
+                        <div class="form-text" data-localize="competitor.small"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label mandatory d-block" data-localize="use-logo.label"></label>
+                        <div class="form-check">
+                            <input class="form-check-input" name="use_logo[]" type="checkbox" value="merchandise"
+                                required>
+                            <label class="form-check-label" for="merchandise" data-localize="use-logo.label1"></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="use_logo[]" type="checkbox" value="online" required>
+                            <label class="form-check-label" for="online" data-localize="use-logo.label2"></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="use_logo[]" type="checkbox" value="cetak" required>
+                            <label class="form-check-label" for="cetak" data-localize="use-logo.label3"></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="use_logo[]" type="checkbox" value="signage" required>
+                            <label class="form-check-label" for="signage" data-localize="use-logo.label4"></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="use_logo[]" type="checkbox" value="televisi" required>
+                            <label class="form-check-label" for="televisi" data-localize="use-logo.label5"></label>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-check p-0">
-                            <input class="btn-check" type="radio" name="type_logo" id="pictorial">
-                            <label class="btn btn-outline-secondary card mb-4" for="pictorial">
-                                <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
-                                    class="d-block mx-auto">
-                                Pictorial Marks
-                            </label>
+                    <div class="form-text" data-localize="feelings.small"></div>
+                </div>
+            </div>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <label class="form-label mandatory" data-localize="type-logo.label"></label>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-check p-0">
+                                <input class="btn-check" type="radio" name="type_logo[]" value="letter" id="letter"
+                                    required>
+                                <label class="btn btn-outline-secondary card mb-4" for="letter">
+                                    <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
+                                        class="d-block mx-auto">
+                                    Letter
+                                </label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-check p-0">
-                            <input class="btn-check" type="radio" name="type_logo" id="abstract">
-                            <label class="btn btn-outline-secondary card mb-4" for="abstract">
-                                <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
-                                    class="d-block mx-auto">
-                                Abstract Marks
-                            </label>
+                        <div class="col-md-6">
+                            <div class="form-check p-0">
+                                <input class="btn-check" type="radio" name="type_logo[]" value="watermark"
+                                    id="watermark">
+                                <label class="btn btn-outline-secondary card mb-4" for="watermark">
+                                    <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
+                                        class="d-block mx-auto">
+                                    Watermark
+                                </label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-check p-0">
-                            <input class="btn-check" type="radio" name="type_logo" id="mascot">
-                            <label class="btn btn-outline-secondary card mb-4" for="mascot">
-                                <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
-                                    class="d-block mx-auto">
-                                Mascot
-                            </label>
+                        <div class="col-md-6">
+                            <div class="form-check p-0">
+                                <input class="btn-check" type="radio" name="type_logo[]" value="pictorial"
+                                    id="pictorial">
+                                <label class="btn btn-outline-secondary card mb-4" for="pictorial">
+                                    <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
+                                        class="d-block mx-auto">
+                                    Pictorial Marks
+                                </label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-check p-0">
-                            <input class="btn-check" type="radio" name="type_logo" id="combination">
-                            <label class="btn btn-outline-secondary card mb-4" for="combination">
-                                <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
-                                    class="d-block mx-auto">
-                                Combination Mark
-                            </label>
+                        <div class="col-md-6">
+                            <div class="form-check p-0">
+                                <input class="btn-check" type="radio" name="type_logo[]" value="abstract" id="abstract">
+                                <label class="btn btn-outline-secondary card mb-4" for="abstract">
+                                    <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
+                                        class="d-block mx-auto">
+                                    Abstract Marks
+                                </label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-check p-0">
-                            <input class="btn-check" type="radio" name="type_logo" id="emblem">
-                            <label class="btn btn-outline-secondary card mb-4" for="emblem">
-                                <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
-                                    class="d-block mx-auto">
-                                Emblem
-                            </label>
+                        <div class="col-md-6">
+                            <div class="form-check p-0">
+                                <input class="btn-check" type="radio" name="type_logo[]" value="mascot" id="mascot">
+                                <label class="btn btn-outline-secondary card mb-4" for="mascot">
+                                    <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
+                                        class="d-block mx-auto">
+                                    Mascot
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-check p-0">
+                                <input class="btn-check" type="radio" name="type_logo[]" value="combination"
+                                    id="combination">
+                                <label class="btn btn-outline-secondary card mb-4" for="combination">
+                                    <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
+                                        class="d-block mx-auto">
+                                    Combination Mark
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-check p-0">
+                                <input class="btn-check" type="radio" name="type_logo[]" value="emblem" id="emblem">
+                                <label class="btn btn-outline-secondary card mb-4" for="emblem">
+                                    <img src="assets/img/waste.jpg" alt="tes" width="100" height="100"
+                                        class="d-block mx-auto">
+                                    Emblem
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6 mx-auto mb-3 text-center">
-            <button class="btn btn-primary mt-3 rounded-pill w-50" data-localize="submit.label" id="btn-submit"
-                onclick="submit()"></button>
-        </div>
+            <div class="col-md-6 mx-auto mb-3 text-center">
+                <button class="btn btn-primary mt-3 w-25" type="submit" data-localize="submit.label"
+                    id="btn-submit"></button>
+            </div>
+        </form>
     </div>
 
     <div class="modal fade" id="modal-mekanisme" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -313,23 +322,32 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script> -->
     <script src="assets/jquery-localize-master/dist/jquery.localize.js"></script>
     <script src="assets/js/scripts.js"></script>
 
     <script>
+        var val = [];
         $(document).ready(function () {
             $("#en").removeAttr('hidden');
             $("[data-localize]").localize("example", {
                 language: "id"
             })
-            $('#id_4').on('change', function () {
+            $('#slogan').on('change', function () {
                 var slogan = $('option:selected', this).val();
                 if (slogan == "Ya") {
-                    $("#slogan_next").removeAttr('hidden')
+                    $("#slogan_next").removeAttr('hidden');
+                    $('#slogan_txt').attr('required', true);
                 } else {
                     $("#slogan_next").attr('hidden', true);
+                    $('#slogan_txt').removeAttr('required');
                 }
+            });
+            $('.feelings:checked').each(function (i) {
+                alert(this.value);
+                $(this).val($('input[name=feelings]').map(function () {
+                    return this.value;
+                }).get().join(','));
             });
         });
 
@@ -350,111 +368,38 @@
             }
         });
 
-        function sendWithPostData(url, data) {
-            var form = document.createElement("form");
-            form.method = "POST";
-            form.action = url;
-            form.style.display = "none";
-
-            for (var key in data) {
-                var input = document.createElement("input");
-                input.type = "hidden";
-                input.name = key;
-                input.value = data[key];
-                form.appendChild(input);
-            }
-            document.body.appendChild(form);
-            form.submit();
-            document.body.removeChild(form);
-        }
-
-        function submit() {
-            var full_name = $("#id_1").val();
-            var email = $("#id_2").val();
-            var logo_name = $("#id_3").val();
-            var slogan = $("#id_4").val();
-            var slogan_next = $("#id_5").val();
-            var industry = $("#id_6").val();
-            var product = $("#id_7").val();
-            var competitor = $("#id_8").val();
-            var data = {
-                full_name: full_name,
-                email: email,
-                logo_name: logo_name,
-                slogan: slogan,
-                slogan_next: slogan_next,
-                industry: industry,
-                product: product,
-                competitor: competitor
-            };
-
-            var verifyPaymentType = function () {
-                var checkboxes = $('.req_check');
-                var inputs = checkboxes.find('input');
-                var first = inputs.first()[0];
-
-                inputs.on('change', function () {
-                    this.setCustomValidity('');
-                });
-
-                // first.setCustomValidity(checkboxes.find('input:checked').length === 0 ? 'Choose one' : '');
-
-                if (checkboxes.find('input:checked').length === 0) {
-                    alert("tes");
-                }
-
-            }
-
-            $(".required:visible").each(function () {
-                var id = $(this).attr("id");
-                if (!$("#" + id).val()) {
-                    $("#" + id).focus();
-                    $.alert({
-                        icon: 'fas fa-exclamation-triangle',
-                        title: 'Gagal!',
-                        type: 'red',
-                        content: 'Kolom wajib diisi tidak boleh kosong',
-                        buttons: {
-                            danger: {
-                                text: 'OK',
-                                btnClass: 'btn-red'
-                            }
-                        }
-                    });
-                    fill_report = false;
-                    return false;
-                }
-                fill_report = true;
+        $(function () {
+            var chbxs = $(':checkbox[required]');
+            var namedChbxs = {};
+            chbxs.each(function () {
+                var name = $(this).attr('name');
+                namedChbxs[name] = (namedChbxs[name] || $()).add(this);
             });
+            chbxs.change(function () {
+                var name = $(this).attr('name');
+                var cbx = namedChbxs[name];
+                if (cbx.filter(':checked').length > 0) {
+                    cbx.removeAttr('required');
+                } else {
+                    cbx.attr('required', 'required');
+                }
+            });
+        });
+    </script>
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbyFx-cWWEABmaayTu71mERHwv57z1x5RwBrMyPwUV81FTaQbfgz3tF4AkDqhYycLxa6/exec'
+        const form = document.forms['rongsok-design-form']
 
-            if (fill_report) {
-                // console.log(data);
-                $.confirm({
-                    icon: 'fas fa-spinner fa-pulse',
-                    title: 'Konfirmasi!',
-                    autoClose: 'cancel|8000',
-                    content: '' +
-                        '<h6>Apakah Anda yakin ingin mengirimkan surat?</h6>' +
-                        '<small class="form-text text-danger">Anda tidak bisa merubah data setelah klik tombol saya yakin</small>',
-                    buttons: {
-                        cancel: {
-                            text: 'Batal',
-                        },
-                        confirm: {
-                            text: 'Saya yakin',
-                            btnClass: 'btn-dark',
-                            action: function () {
-                                $('#btn-submit').html(
-                                    'Mengirimkan... <i class="fas fa-spinner fa-pulse fa-fw">').attr(
-                                    "disabled", true);
-                                // sendWithPostData("process.php", data);
-                                console.log(data);
-                            }
-                        }
-                    }
-                });
-            }
-        }
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
     </script>
 </body>
 
