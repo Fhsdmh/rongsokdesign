@@ -34,7 +34,7 @@
                 </a>
                 <div class="dropdown">
                     <a class="nav-link dropdown-toggle text-white pt-0 pe-2 ps-0 pb-0" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false" data-localize="dropdown-toggle"></a>
+                        data-bs-toggle="dropdown" aria-expanded="false" data-localize="dropdown-toggle">ID</a>
                     <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end dropdown-custom"
                         aria-labelledby="dropdown_lang" id="dropdown_lang">
                         <li><a class="dropdown-item" href="#" id="id" hidden>ID</a></li>
@@ -59,24 +59,26 @@
         <h1 class="display-6 text-center mt-3">Gracias!</h1>
         <p class="text-center">Pesan Anda telah kami terima</p>
         <div class="text-center">
-            <a href="form.html" class="btn btn-primary">Kembali</a>
+            <a href="javascript:history.go(0)" class="btn btn-primary">Kembali</a>
         </div>
     </div>
 
     <div class="container hide_custom">
         <div class="card card-desktop col-md-6 mx-auto shadow-sm mb-3">
             <div class="card-body">
-                <h5 class="card-title fw-bold" data-localize="data-title"></h5>
-                <p class="card-text mb-0" data-localize="card-text1"></p>
-                <p class="card-text mb-0" data-localize="card-text2"></p>
-                <p class="card-text" data-localize="card-text3"></p>
+                <h5 class="card-title fw-bold" data-localize="data-title">Form Preferensi Pelanggan</h5>
+                <p class="card-text mb-0" data-localize="card-text1"><label class='mandatory'></label> Wajib diisi</p>
+                <p class="card-text mb-0" data-localize="card-text2">Mekanisme pemesanan logo <a href='#modal-mekanisme'
+                        class='text-decoration-none' data-bs-toggle='modal'>Baca</a></p>
+                <p class="card-text" data-localize="card-text3">Kontak : <a href='https://wa.me/message/YFDJVB5MT6JAG1'
+                        class='text-decoration-none' target='_blank'>+6281212818612</a></p>
             </div>
         </div>
         <form name="rongsok-design-form" id="rongsok-design-form">
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
                     <div class="mb-3">
-                        <label class="form-label mandatory" data-localize="name.label"></label>
+                        <label class="form-label mandatory" data-localize="name.label">Nama Lengkap</label>
                         <input type="text" class="form-control" name="full_name" data-localize="name.placeholder"
                             placeholder="Masukkan nama lengkap Anda" autocomplete="off" required>
                     </div>
@@ -85,7 +87,7 @@
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
                     <div class="mb-3">
-                        <label class="form-label mandatory" data-localize="email.label"></label>
+                        <label class="form-label mandatory" data-localize="email.label">Email</label>
                         <input type="email" class="form-control" name="email" data-localize="email.placeholder"
                             placeholder="Masukkan email Anda" required>
                     </div>
@@ -94,25 +96,26 @@
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
                     <div class="mb-3">
-                        <label class="form-label mandatory" data-localize="logo.label"></label>
+                        <label class="form-label mandatory" data-localize="logo.label">Nama Logo</label>
                         <input type="text" class="form-control" name="logo_name" data-localize="logo.placeholder"
                             placeholder="Masukkan nama logo Anda" autocomplete="off" required>
-                        <div class="form-text" data-localize="logo.small"></div>
+                        <div class="form-text" data-localize="logo.small">Nama yang diinginkan untuk logo Anda</div>
                     </div>
                 </div>
             </div>
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
                     <div class="mb-3">
-                        <label class="form-label mandatory" data-localize="slogan.label"></label>
+                        <label class="form-label mandatory" data-localize="slogan.label">Apakah Anda memiliki
+                            slogan?</label>
                         <select class="form-select" name="slogan" id="slogan" required>
                             <option value="" selected hidden disabled data-localize="slogan.option1"></option>
-                            <option value="Ya" data-localize="slogan.option2"></option>
-                            <option value="Tidak" data-localize="slogan.option3"></option>
+                            <option value="Ya" data-localize="slogan.option2">Ya</option>
+                            <option value="Tidak" data-localize="slogan.option3">Tidak</option>
                         </select>
                     </div>
                     <div class="mb-3" id="slogan_next" hidden>
-                        <label class="form-label mandatory" data-localize="slogan-next.label"></label>
+                        <label class="form-label mandatory" data-localize="slogan-next.label">Nama slogan</label>
                         <textarea class="form-control" id="slogan_txt" rows="3" data-localize="slogan-next.placeholder"
                             placeholder="Masukkan slogan Anda" name="slogan_next"></textarea>
                         <div class="form-text" data-localize="slogan-next.small"></div>
@@ -122,15 +125,17 @@
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
                     <div class="mb-3">
-                        <label class="form-label mandatory" data-localize="industry.label"></label>
+                        <label class="form-label mandatory" data-localize="industry.label">Apa bidang industri
+                            Anda?</label>
                         <select class="form-select" name="industry" required>
-                            <option value="" selected hidden disabled data-localize="industry.option1"></option>
-                            <option value="Makanan" data-localize="industry.option2"></option>
-                            <option value="Keuangan" data-localize="industry.option3"></option>
-                            <option value="Pariwisata" data-localize="industry.option4"></option>
-                            <option value="Pertanian" data-localize="industry.option5"></option>
-                            <option value="Pertambangan" data-localize="industry.option6"></option>
-                            <option value="Lainnya" data-localize="industry.option7"></option>
+                            <option value="" selected hidden disabled data-localize="industry.option1">-- Pilih salah
+                                satu --</option>
+                            <option value="Makanan" data-localize="industry.option2">Makanan</option>
+                            <option value="Keuangan" data-localize="industry.option3">Keuangan</option>
+                            <option value="Pariwisata" data-localize="industry.option4">Pariwisata</option>
+                            <option value="Pertanian" data-localize="industry.option5">Pertanian</option>
+                            <option value="Pertambangan" data-localize="industry.option6">Pertambangan</option>
+                            <option value="Lainnya" data-localize="industry.option7">Lainnya</option>
                         </select>
                     </div>
                 </div>
@@ -138,36 +143,41 @@
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
                     <div class="mb-3">
-                        <label class="form-label mandatory d-block" data-localize="feelings.label"></label>
+                        <label class="form-label mandatory d-block" data-localize="feelings.label">Pilih konsep pada
+                            logo Anda</label>
                         <div class="form-check">
                             <input class="form-check-input feelings" name="feelings[]" type="checkbox" value="modern"
                                 autocomplete="off" required>
-                            <label class="form-check-label" for="modern" data-localize="feelings.label1"></label>
+                            <label class="form-check-label" for="modern" data-localize="feelings.label1">Modern</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input feelings" name="feelings[]" type="checkbox"
                                 value="futuristik" autocomplete="off" required>
-                            <label class="form-check-label" for="futuristik" data-localize="feelings.label2"></label>
+                            <label class="form-check-label" for="futuristik"
+                                data-localize="feelings.label2">Futuristik</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input feelings" name="feelings[]" type="checkbox"
                                 value="tradisional" autocomplete="off" required>
-                            <label class="form-check-label" for="tradisional" data-localize="feelings.label3"></label>
+                            <label class="form-check-label" for="tradisional"
+                                data-localize="feelings.label3">Tradisional</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input feelings" name="feelings[]" type="checkbox" value="sederhana"
                                 autocomplete="off" required>
-                            <label class="form-check-label" for="sederhana" data-localize="feelings.label4"></label>
+                            <label class="form-check-label" for="sederhana"
+                                data-localize="feelings.label4">Sederhana</label>
                         </div>
                     </div>
-                    <div class="form-text" data-localize="feelings.small"></div>
+                    <div class="form-text" data-localize="feelings.small">Anda bisa memilih lebih dari satu</div>
                     <input type="hidden" id="feelings_text" name="feelings_text">
                 </div>
             </div>
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
                     <div class="mb-3">
-                        <label class="form-label mandatory" data-localize="product.label"></label>
+                        <label class="form-label mandatory" data-localize="product.label">Jelaskan tentang audiens,
+                            organisasi, atau produk Anda</label>
                         <textarea class="form-control" rows="3" name="product" data-localize="product.placeholder"
                             placeholder="Jelaskan secara singkat, jelas dan padat" required></textarea>
                     </div>
@@ -176,50 +186,58 @@
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
                     <div class="mb-3">
-                        <label class="form-label mandatory" data-localize="competitor.label"></label>
+                        <label class="form-label mandatory" data-localize="competitor.label">Tuliskan 3 kompetitor pada
+                            bidang industri Anda</label>
                         <textarea class="form-control" rows="3" name="competitor" data-localize="competitor.placeholder"
                             placeholder="Tuliskan secara singkat, jelas dan padat" required></textarea>
-                        <div class="form-text" data-localize="competitor.small"></div>
+                        <div class="form-text" data-localize="competitor.small">Jika memungkinkan, tuliskan juga tautan
+                            kompetitor tersebut</div>
                     </div>
                 </div>
             </div>
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
                     <div class="mb-3">
-                        <label class="form-label mandatory d-block" data-localize="use-logo.label"></label>
+                        <label class="form-label mandatory d-block" data-localize="use-logo.label">Dimana Anda akan
+                            menggunakan logo?</label>
                         <div class="form-check">
                             <input class="form-check-input use_logo" name="use_logo[]" type="checkbox"
                                 value="merchandise" autocomplete="off" required>
-                            <label class="form-check-label" for="merchandise" data-localize="use-logo.label1"></label>
+                            <label class="form-check-label" for="merchandise" data-localize="use-logo.label1">Barang
+                                dagangan (cangkir, kaos, dll.)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input use_logo" name="use_logo[]" type="checkbox" value="online"
                                 autocomplete="off" required>
-                            <label class="form-check-label" for="online" data-localize="use-logo.label2"></label>
+                            <label class="form-check-label" for="online" data-localize="use-logo.label2">Online (situs
+                                web, iklan online, dll.)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input use_logo" name="use_logo[]" type="checkbox" value="cetak"
                                 autocomplete="off" required>
-                            <label class="form-check-label" for="cetak" data-localize="use-logo.label3"></label>
+                            <label class="form-check-label" for="cetak" data-localize="use-logo.label3">Cetak (kartu
+                                nama, kop surat, brosur, dll.)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input use_logo" name="use_logo[]" type="checkbox" value="signage"
                                 autocomplete="off" required>
-                            <label class="form-check-label" for="signage" data-localize="use-logo.label4"></label>
+                            <label class="form-check-label" for="signage" data-localize="use-logo.label4">Rambu (toko,
+                                papan iklan, dll.)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input use_logo" name="use_logo[]" type="checkbox" value="televisi"
                                 autocomplete="off" required>
-                            <label class="form-check-label" for="televisi" data-localize="use-logo.label5"></label>
+                            <label class="form-check-label" for="televisi" data-localize="use-logo.label5">Televisi atau
+                                layar</label>
                         </div>
                     </div>
-                    <div class="form-text" data-localize="feelings.small"></div>
+                    <div class="form-text" data-localize="feelings.small">Anda bisa memilih lebih dari satu</div>
                     <input type="hidden" id="use_logo_text" name="use_logo_text">
                 </div>
             </div>
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
-                    <label class="form-label mandatory" data-localize="type-logo.label"></label>
+                    <label class="form-label mandatory" data-localize="type-logo.label">Pilih tipe logo Anda</label>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-check p-0">
@@ -302,86 +320,104 @@
                     </div>
                     <label>Pilih atribut tampilan Anda</label>
                     <small class="d-block text-muted">Klik kotak untuk memilih atribut tampilan Anda</small>
-                    <div class="d-flex justify-content-center mt-3">
+                    <div class="d-flex justify-content-between mt-3">
+                        <span>M</span>
                         <select class="select-bar-rating">
-                            <option value="1">Very Modern</option>
-                            <option value="2">Modern</option>
+                            <option value="1">Modern</option>
+                            <option value="2">Little Modern</option>
                             <option value="3">Middle</option>
-                            <option value="4">Classic</option>
-                            <option value="5">Very Classic</option>
+                            <option value="4">Little Classic</option>
+                            <option value="5">Classic</option>
                         </select>
+                        <span>C</span>
                     </div>
-                    <div class="d-flex justify-content-center mt-3">
+                    <div class="d-flex justify-content-between mt-3">
+                        <span>Y</span>
                         <select class="select-bar-rating">
-                            <option value="1">Very Youthful</option>
-                            <option value="2">Youthful</option>
+                            <option value="1">Youthful</option>
+                            <option value="2">Little Youthful</option>
                             <option value="3">Middle</option>
-                            <option value="4">Mature</option>
-                            <option value="5">Very Mature</option>
+                            <option value="4">Little Mature</option>
+                            <option value="5">Mature</option>
                         </select>
+                        <span>M</span>
                     </div>
-                    <div class="d-flex justify-content-center mt-3">
+                    <div class="d-flex justify-content-between mt-3">
+                        <span>F</span>
                         <select class="select-bar-rating">
-                            <option value="1">Very Feminine</option>
-                            <option value="2">Feminine</option>
+                            <option value="1">Feminine</option>
+                            <option value="2">Little Feminine</option>
                             <option value="3">Middle</option>
-                            <option value="4">Masculine</option>
-                            <option value="5">Very Masculine</option>
+                            <option value="4">Little Masculine</option>
+                            <option value="5">Masculine</option>
                         </select>
+                        <span>M</span>
                     </div>
-                    <div class="d-flex justify-content-center mt-3">
+                    <div class="d-flex justify-content-between mt-3">
+                        <span>P</span>
                         <select class="select-bar-rating">
-                            <option value="1">Very Playful</option>
-                            <option value="2">Playful</option>
+                            <option value="1">Playful</option>
+                            <option value="2">Little Playful</option>
                             <option value="3">Middle</option>
-                            <option value="4">Sophisticated</option>
-                            <option value="5">Very Sophisticated</option>
+                            <option value="4">Little Sophisticated</option>
+                            <option value="5">Sophisticated</option>
                         </select>
+                        <span>S</span>
                     </div>
-                    <div class="d-flex justify-content-center mt-3">
+                    <div class="d-flex justify-content-between mt-3">
+                        <span>L</span>
                         <select class="select-bar-rating">
-                            <option value="1">Very Luxurious</option>
-                            <option value="2">Luxurious</option>
+                            <option value="1">Luxurious</option>
+                            <option value="2">Little Luxurious</option>
                             <option value="3">Middle</option>
-                            <option value="4">Economical</option>
-                            <option value="5">Very Economical</option>
+                            <option value="4">Little Economical</option>
+                            <option value="5">Economical</option>
                         </select>
+                        <span>E</span>
                     </div>
-                    <div class="d-flex justify-content-center mt-3">
+                    <div class="d-flex justify-content-between mt-3">
+                        <span>L</span>
                         <select class="select-bar-rating">
-                            <option value="1">Very Loud</option>
-                            <option value="2">Loud</option>
+                            <option value="1">Loud</option>
+                            <option value="2">Little Loud</option>
                             <option value="3">Middle</option>
-                            <option value="4">Quiet</option>
-                            <option value="5">Very Quiet</option>
+                            <option value="4">Little Quiet</option>
+                            <option value="5">Quiet</option>
                         </select>
+                        <span>Q</span>
                     </div>
-                    <div class="d-flex justify-content-center mt-3">
+                    <div class="d-flex justify-content-between mt-3">
+                        <span>S</span>
                         <select class="select-bar-rating">
-                            <option value="1">Very Simple</option>
-                            <option value="2">Simple</option>
+                            <option value="1">Simple</option>
+                            <option value="2">Little Simple</option>
                             <option value="3">Middle</option>
-                            <option value="4">Complex</option>
-                            <option value="5">Very Complex</option>
+                            <option value="4">Little Complex</option>
+                            <option value="5">Complex</option>
                         </select>
+                        <span>C</span>
                     </div>
-                    <div class="d-flex justify-content-center mt-3">
+                    <div class="d-flex justify-content-between mt-3">
+                        <span>S</span>
                         <select class="select-bar-rating">
-                            <option value="1">Very Subtle</option>
-                            <option value="2">Subtle</option>
+                            <option value="1">Subtle</option>
+                            <option value="2">Little Subtle</option>
                             <option value="3">Middle</option>
-                            <option value="4">Obvious</option>
-                            <option value="5">Very Obvious</option>
+                            <option value="4">Little Obvious</option>
+                            <option value="5">Obvious</option>
                         </select>
+                        <span>O</span>
                     </div>
-                    <div class="d-flex justify-content-center mt-3">
+                    <div class="d-flex justify-content-between mt-3">
+                        <span>G</span>
                         <select class="select-bar-rating">
-                            <option value="1">Very Geometric</option>
-                            <option value="2">Geometric</option>
+                            <option value="1">Geometric</option>
+                            <option value="2">Little Geometric</option>
                             <option value="3">Middle</option>
-                            <option value="4">Organic</option>
-                            <option value="5">Very Organic</option>
+                            <option value="4">Little Organic</option>
+                            <option value="5">Organic</option>
                         </select>
+                        <span>O</span>
                     </div>
                 </div>
             </div>
@@ -406,13 +442,13 @@
                 </div>
                 <div class="modal-body pt-0">
                     <ol>
-                        <li data-localize="modal.li1"></li>
-                        <li data-localize="modal.li2"></li>
-                        <li data-localize="modal.li3"></li>
-                        <li data-localize="modal.li4"></li>
-                        <li data-localize="modal.li5"></li>
-                        <li data-localize="modal.li6"></li>
-                        <li data-localize="modal.li7"></li>
+                        <li data-localize="modal.li1">Klien mengisi form</li>
+                        <li data-localize="modal.li2">Klien membayar DP sebesar 50% dari harga yang ditetapkan</li>
+                        <li data-localize="modal.li3">Tim Rongsok Design akan memberikan 3 konsep logo</li>
+                        <li data-localize="modal.li4">Klien harus memilih 1 konsep logo</li>
+                        <li data-localize="modal.li5">Revisi konsep logo (jika diperlukan)</li>
+                        <li data-localize="modal.li6">Klien membayar seluruh harga</li>
+                        <li data-localize="modal.li7">Tim Rongsok Design akan mengirimkan file melalui email</li>
                     </ol>
                 </div>
             </div>
