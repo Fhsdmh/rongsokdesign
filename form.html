@@ -17,8 +17,9 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="assets/jquery-bar-rating-master/dist/themes/bars-movie.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
 
     <title>Rongsok Design</title>
 </head>
@@ -140,22 +141,22 @@
                         <label class="form-label mandatory d-block" data-localize="feelings.label"></label>
                         <div class="form-check">
                             <input class="form-check-input feelings" name="feelings[]" type="checkbox" value="modern"
-                                required>
+                                autocomplete="off" required>
                             <label class="form-check-label" for="modern" data-localize="feelings.label1"></label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input feelings" name="feelings[]" type="checkbox"
-                                value="futuristik" required>
+                                value="futuristik" autocomplete="off" required>
                             <label class="form-check-label" for="futuristik" data-localize="feelings.label2"></label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input feelings" name="feelings[]" type="checkbox"
-                                value="tradisional" required>
+                                value="tradisional" autocomplete="off" required>
                             <label class="form-check-label" for="tradisional" data-localize="feelings.label3"></label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input feelings" name="feelings[]" type="checkbox" value="sederhana"
-                                required>
+                                autocomplete="off" required>
                             <label class="form-check-label" for="sederhana" data-localize="feelings.label4"></label>
                         </div>
                     </div>
@@ -188,27 +189,27 @@
                         <label class="form-label mandatory d-block" data-localize="use-logo.label"></label>
                         <div class="form-check">
                             <input class="form-check-input use_logo" name="use_logo[]" type="checkbox"
-                                value="merchandise" required>
+                                value="merchandise" autocomplete="off" required>
                             <label class="form-check-label" for="merchandise" data-localize="use-logo.label1"></label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input use_logo" name="use_logo[]" type="checkbox" value="online"
-                                required>
+                                autocomplete="off" required>
                             <label class="form-check-label" for="online" data-localize="use-logo.label2"></label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input use_logo" name="use_logo[]" type="checkbox" value="cetak"
-                                required>
+                                autocomplete="off" required>
                             <label class="form-check-label" for="cetak" data-localize="use-logo.label3"></label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input use_logo" name="use_logo[]" type="checkbox" value="signage"
-                                required>
+                                autocomplete="off" required>
                             <label class="form-check-label" for="signage" data-localize="use-logo.label4"></label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input use_logo" name="use_logo[]" type="checkbox" value="televisi"
-                                required>
+                                autocomplete="off" required>
                             <label class="form-check-label" for="televisi" data-localize="use-logo.label5"></label>
                         </div>
                     </div>
@@ -222,8 +223,8 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-check p-0">
-                                <input class="btn-check" type="radio" name="type_logo" value="letter" id="letter"
-                                    required>
+                                <input class="btn-check type_logo" type="checkbox" name="type_logo" value="letter"
+                                    id="letter" autocomplete="off" required>
                                 <label class="btn btn-outline-secondary card mb-4" for="letter">
                                     <img src="assets/img/ibm.png" alt="logo-check-select" width="100" height="100"
                                         class="d-block mx-auto">
@@ -233,7 +234,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-check p-0">
-                                <input class="btn-check" type="radio" name="type_logo" value="wordmark" id="wordmark">
+                                <input class="btn-check type_logo" type="checkbox" name="type_logo" value="wordmark"
+                                    autocomplete="off" id="wordmark">
                                 <label class="btn btn-outline-secondary card mb-4" for="wordmark">
                                     <img src="assets/img/coca-cola.png" alt="logo-check-select" width="100" height="100"
                                         class="d-block mx-auto">
@@ -243,7 +245,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-check p-0">
-                                <input class="btn-check" type="radio" name="type_logo" value="pictorial" id="pictorial">
+                                <input class="btn-check type_logo" type="checkbox" name="type_logo" value="pictorial"
+                                    autocomplete="off" id="pictorial">
                                 <label class="btn btn-outline-secondary card mb-4" for="pictorial">
                                     <img src="assets/img/twitter.png" alt="logo-check-select" width="100" height="100"
                                         class="d-block mx-auto">
@@ -253,7 +256,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-check p-0">
-                                <input class="btn-check" type="radio" name="type_logo" value="abstract" id="abstract">
+                                <input class="btn-check type_logo" type="checkbox" name="type_logo" value="abstract"
+                                    autocomplete="off" id="abstract">
                                 <label class="btn btn-outline-secondary card mb-4" for="abstract">
                                     <img src="assets/img/pepsi.png" alt="logo-check-select" width="100" height="100"
                                         class="d-block mx-auto">
@@ -263,7 +267,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-check p-0">
-                                <input class="btn-check" type="radio" name="type_logo" value="mascot" id="mascot">
+                                <input class="btn-check type_logo" type="checkbox" name="type_logo" value="mascot"
+                                    autocomplete="off" id="mascot">
                                 <label class="btn btn-outline-secondary card mb-4" for="mascot">
                                     <img src="assets/img/kfc.png" alt="logo-check-select" width="100" height="100"
                                         class="d-block mx-auto">
@@ -273,8 +278,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-check p-0">
-                                <input class="btn-check" type="radio" name="type_logo" value="combination"
-                                    id="combination">
+                                <input class="btn-check type_logo" type="checkbox" name="type_logo" value="combination"
+                                    autocomplete="off" id="combination">
                                 <label class="btn btn-outline-secondary card mb-4" for="combination">
                                     <img src="assets/img/burger-king.png" alt="logo-check-select" width="100"
                                         height="100" class="d-block mx-auto">
@@ -284,7 +289,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-check p-0">
-                                <input class="btn-check" type="radio" name="type_logo" value="emblem" id="emblem">
+                                <input class="btn-check type_logo" type="checkbox" name="type_logo" value="emblem"
+                                    autocomplete="off" id="emblem">
                                 <label class="btn btn-outline-secondary card mb-4" for="emblem">
                                     <img src="assets/img/starbucks.png" alt="logo-check-select" width="100" height="100"
                                         class="d-block mx-auto">
@@ -292,6 +298,90 @@
                                 </label>
                             </div>
                         </div>
+                        <input type="hidden" id="type_logo_text" name="type_logo_text">
+                    </div>
+                    <label>Pilih atribut tampilan Anda</label>
+                    <small class="d-block text-muted">Klik kotak untuk memilih atribut tampilan Anda</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <select class="select-bar-rating">
+                            <option value="1">Very Modern</option>
+                            <option value="2">Modern</option>
+                            <option value="3">Middle</option>
+                            <option value="4">Classic</option>
+                            <option value="5">Very Classic</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <select class="select-bar-rating">
+                            <option value="1">Very Youthful</option>
+                            <option value="2">Youthful</option>
+                            <option value="3">Middle</option>
+                            <option value="4">Mature</option>
+                            <option value="5">Very Mature</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <select class="select-bar-rating">
+                            <option value="1">Very Feminine</option>
+                            <option value="2">Feminine</option>
+                            <option value="3">Middle</option>
+                            <option value="4">Masculine</option>
+                            <option value="5">Very Masculine</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <select class="select-bar-rating">
+                            <option value="1">Very Playful</option>
+                            <option value="2">Playful</option>
+                            <option value="3">Middle</option>
+                            <option value="4">Sophisticated</option>
+                            <option value="5">Very Sophisticated</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <select class="select-bar-rating">
+                            <option value="1">Very Luxurious</option>
+                            <option value="2">Luxurious</option>
+                            <option value="3">Middle</option>
+                            <option value="4">Economical</option>
+                            <option value="5">Very Economical</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <select class="select-bar-rating">
+                            <option value="1">Very Loud</option>
+                            <option value="2">Loud</option>
+                            <option value="3">Middle</option>
+                            <option value="4">Quiet</option>
+                            <option value="5">Very Quiet</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <select class="select-bar-rating">
+                            <option value="1">Very Simple</option>
+                            <option value="2">Simple</option>
+                            <option value="3">Middle</option>
+                            <option value="4">Complex</option>
+                            <option value="5">Very Complex</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <select class="select-bar-rating">
+                            <option value="1">Very Subtle</option>
+                            <option value="2">Subtle</option>
+                            <option value="3">Middle</option>
+                            <option value="4">Obvious</option>
+                            <option value="5">Very Obvious</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <select class="select-bar-rating">
+                            <option value="1">Very Geometric</option>
+                            <option value="2">Geometric</option>
+                            <option value="3">Middle</option>
+                            <option value="4">Organic</option>
+                            <option value="5">Very Organic</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -344,11 +434,18 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
     <script src="assets/jquery-localize-master/dist/jquery.localize.js"></script>
+    <script src="assets/jquery-bar-rating-master/dist/jquery.barrating.min.js"></script>
     <script src="assets/js/scripts.js"></script>
 
     <script>
         var val = [];
         $(document).ready(function () {
+            $(function () {
+                $('.select-bar-rating').barrating({
+                    theme: 'bars-movie',
+                    hoverState: false
+                });
+            });
             $("#en").removeAttr('hidden');
             $("[data-localize]").localize("example", {
                 language: "id"
@@ -374,6 +471,12 @@
                     return this.value;
                 }).get().join(',');
                 $('#use_logo_text').val(tes);
+            });
+            $('.type_logo:checkbox').change(function () {
+                var tes = $('.type_logo:checkbox:checked').map(function () {
+                    return this.value;
+                }).get().join(',');
+                $('#type_logo_text').val(tes);
             });
         });
 
