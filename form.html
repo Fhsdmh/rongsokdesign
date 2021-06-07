@@ -61,7 +61,8 @@
         <p class="text-center" data-localize="success.text">Pesan Anda telah kami terima, <br> Kami akan menghubungi
             Anda melalui WhatsApp untuk info lebih lanjut.</p>
         <div class="text-center">
-            <a href="javascript:history.go(0)" class="btn btn-primary" data-localize="success.button">Kembali</a>
+            <a href="javascript:history.go(0)" class="btn btn-primary rounded-pill px-5"
+                data-localize="success.button">Kembali</a>
         </div>
     </div>
 
@@ -132,20 +133,20 @@
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
                     <div class="mb-3">
-                        <label class="form-label mandatory">Apakah Anda memiliki
+                        <label class="form-label mandatory" data-localize="label.slogan">Apakah Anda memiliki
                             slogan?</label>
                         <select class="form-select" name="slogan" id="slogan" required>
-                            <option value="" selected hidden disabled>-- Pilih salah satu
+                            <option value="" selected hidden disabled data-localize="option.label">-- Pilih salah satu
                                 --</option>
-                            <option value="Ya">Ya</option>
-                            <option value="Tidak">Tidak</option>
+                            <option value="Ya" data-localize="option.yes">Ya</option>
+                            <option value="Tidak" data-localize="option.no">Tidak</option>
                         </select>
                     </div>
                     <div class="mb-3" id="slogan_next" hidden>
-                        <label class="form-label mandatory">Nama slogan</label>
-                        <textarea class="form-control" id="slogan_txt" rows="3" placeholder="Masukkan slogan Anda"
-                            name="slogan_next"></textarea>
-                        <div class="form-text">Slogan yang ingin dilengkapi di logo
+                        <label class="form-label mandatory" data-localize="label.slogan_next">Slogan</label>
+                        <textarea class="form-control" id="slogan_txt" rows="3" data-localize="placeholder.slogan_next"
+                            placeholder="Masukkan slogan Anda" name="slogan_next"></textarea>
+                        <div class="form-text" data-localize="small.slogan_next">Slogan yang ingin dilengkapi di logo
                             Anda</div>
                     </div>
                 </div>
@@ -153,26 +154,34 @@
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
                     <div class="mb-3">
-                        <label class="form-label mandatory">Apa bidang industri
+                        <label class="form-label mandatory" data-localize="label.industry">Apa bidang industri/bisnis
                             Anda?</label>
-                        <select class="form-select" name="industry" required>
-                            <option value="" selected hidden disabled>-- Pilih salah satu --</option>
-                            <option value="Makanan">Makanan</option>
-                            <option value="Keuangan">Keuangan</option>
-                            <option value="Pariwisata">Pariwisata</option>
-                            <option value="Pertanian">Pertanian</option>
-                            <option value="Pertambangan">Pertambangan</option>
-                            <option value="Lainnya">Lainnya</option>
+                        <select class="form-select" name="industry" id="industry" required>
+                            <option value="" selected hidden disabled data-localize="option.label">-- Pilih salah satu
+                                --</option>
+                            <option value="Makanan" data-localize="option.industry1">Makanan</option>
+                            <option value="Keuangan" data-localize="option.industry2">Keuangan</option>
+                            <option value="Pariwisata" data-localize="option.industry3">Pariwisata</option>
+                            <option value="Pertanian" data-localize="option.industry4">Pertanian</option>
+                            <option value="Pertambangan" data-localize="option.industry5">Pertambangan</option>
+                            <option value="Lainnya" data-localize="option.industry6">Lainnya</option>
                         </select>
+                    </div>
+                    <div class="mb-3" id="industry_next" hidden>
+                        <label class="form-label mandatory" data-localize="label.industry_next">Bidang industri/bisnis
+                            Anda</label>
+                        <textarea class="form-control" id="industry_txt" rows="3"
+                            data-localize="placeholder.industry_next" placeholder="Masukkan bidang industri/bisnis Anda"
+                            name="industry_next"></textarea>
                     </div>
                 </div>
             </div>
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
                     <div class="mb-3">
-                        <label class="form-label mandatory d-block">Sebutkan keinginan
+                        <label class="form-label mandatory" data-localize="label.feelings">Sebutkan keinginan
                             khusus Anda, dan juga kesan yang ingin ditampilkan dari logo Anda</label>
-                        <textarea class="form-control" rows="3"
+                        <textarea class="form-control" rows="3" data-localize="placeholder.feelings"
                             placeholder="Contoh : Saya ingin logo minimalis berupa burung garuda, yang berkesan modern dan futuristik"
                             name="feelings" required></textarea>
                     </div>
@@ -181,9 +190,9 @@
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
                     <div class="mb-3">
-                        <label class="form-label mandatory">Jelaskan tentang audiens,
+                        <label class="form-label mandatory" data-localize="label.product">Jelaskan tentang audiens,
                             organisasi, atau produk Anda</label>
-                        <textarea class="form-control" rows="3" name="product"
+                        <textarea class="form-control" rows="3" name="product" data-localize="placeholder.product"
                             placeholder="Jelaskan secara singkat, jelas dan padat" required></textarea>
                     </div>
                 </div>
@@ -191,11 +200,11 @@
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
                     <div class="mb-3">
-                        <label class="form-label mandatory">Tuliskan 3 kompetitor pada
-                            bidang industri Anda</label>
-                        <textarea class="form-control" rows="3" name="competitor"
-                            placeholder="Tuliskan secara singkat, jelas dan padat" required></textarea>
-                        <div class="form-text">Jika memungkinkan, tuliskan juga tautan
+                        <label class="form-label mandatory" data-localize="label.competitor">Tuliskan 3 kompetitor pada
+                            bidang industri/bisnis Anda</label>
+                        <textarea class="form-control" rows="3" name="competitor" data-localize="placeholder.competitor"
+                            placeholder="Contoh : 1. contoh (contoh.com)" required></textarea>
+                        <div class="form-text" data-localize="small.competitor">Jika memungkinkan, tuliskan juga tautan
                             kompetitor tersebut</div>
                     </div>
                 </div>
@@ -203,49 +212,50 @@
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
                     <div class="mb-3">
-                        <label class="form-label mandatory d-block">Dimana Anda akan
+                        <label class="form-label mandatory d-block" data-localize="label.use_logo">Dimana Anda akan
                             menggunakan logo?</label>
                         <div class="form-check">
                             <input class="form-check-input use_logo" name="use_logo[]" type="checkbox"
                                 value="merchandise" autocomplete="off" required>
-                            <label class="form-check-label" for="merchandise">Barang
+                            <label class="form-check-label" for="merchandise" data-localize="checkbox.use_logo1">Barang
                                 dagangan (cangkir, kaos, dll.)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input use_logo" name="use_logo[]" type="checkbox" value="online"
                                 autocomplete="off" required>
-                            <label class="form-check-label" for="online">Online (situs
-                                web, iklan online, dll.)</label>
+                            <label class="form-check-label" for="online" data-localize="checkbox.use_logo2">Online
+                                (situs web, iklan online, dll.)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input use_logo" name="use_logo[]" type="checkbox" value="cetak"
                                 autocomplete="off" required>
-                            <label class="form-check-label" for="cetak">Cetak (kartu
+                            <label class="form-check-label" for="cetak" data-localize="checkbox.use_logo3">Cetak (kartu
                                 nama, kop surat, brosur, dll.)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input use_logo" name="use_logo[]" type="checkbox" value="signage"
                                 autocomplete="off" required>
-                            <label class="form-check-label" for="signage">Rambu (toko,
-                                papan iklan, dll.)</label>
+                            <label class="form-check-label" for="signage" data-localize="checkbox.use_logo4">Rambu
+                                (toko, papan iklan, dll.)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input use_logo" name="use_logo[]" type="checkbox" value="televisi"
                                 autocomplete="off" required>
-                            <label class="form-check-label" for="televisi">Televisi atau
-                                layar</label>
+                            <label class="form-check-label" for="televisi" data-localize="checkbox.use_logo5">Televisi
+                                atau layar</label>
                         </div>
                     </div>
-                    <div class="form-text">Anda bisa memilih lebih dari satu</div>
+                    <div class="form-text" data-localize="small.choose">Anda bisa memilih lebih dari satu</div>
                     <input type="hidden" id="use_logo_text" name="use_logo_text">
                 </div>
             </div>
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
-                    <label class="form-label mandatory">Pilih tipe logo Anda</label>
-                    <small class="d-block">Belum muncul gambar? <a href="javascript:history.go(0)"
-                            class="text-decoration-none">Segarkan</a></small>
-                    <small class="form-text d-block mb-3">Anda bisa memilih lebih dari satu</small>
+                    <label class="form-label mandatory" data-localize="label.type_logo">Pilih tipe logo Anda</label>
+                    <small class="d-block" data-localize="small.type_logo">Belum muncul gambar? <a
+                            href="javascript:history.go(0)" class="text-decoration-none">Segarkan</a></small>
+                    <small class="form-text d-block mb-3" data-localize="small.choose">Anda bisa memilih lebih dari
+                        satu</small>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-check p-0">
@@ -330,9 +340,9 @@
             </div>
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
-                    <label>Pilih atribut tampilan Anda</label>
-                    <small class="d-block form-text">Geser tombol untuk mendeskripsikan keinginan tampilan pada logo
-                        Anda</small>
+                    <label data-localize="label.attribute">Pilih atribut tampilan Anda</label>
+                    <small class="d-block form-text" data-localize="small.attribute">Geser tombol untuk mendeskripsikan
+                        keinginan tampilan pada logo Anda</small>
                     <div class="mb-3 justify-content-between d-flex mt-3">
                         <span class="me-2 text-break" style="width: 4rem;">Modern</span>
                         <input class="custom_slider_boot" type="text" name="modern_classic" data-slider-min="0"
@@ -392,25 +402,29 @@
             <div class="card col-md-6 mx-auto shadow-sm mb-3">
                 <div class="card-body">
                     <div class="mb-3">
-                        <label class="form-label mandatory">Apakah Anda memerlukan pembahasan lebih detail melalui
-                            virtual meeting dengan Tim kami?</label>
+                        <label class="form-label mandatory" data-localize="label.meeting">Apakah Anda memerlukan
+                            pembahasan lebih detail melalui virtual meeting dengan Tim kami?</label>
                         <select class="form-select" name="virtual_meet" id="virtual_meet" required>
-                            <option value="" selected hidden disabled>-- Pilih salah satu --</option>
-                            <option value="Ya">Ya, saya perlu</option>
-                            <option value="Tidak">Tidak perlu</option>
+                            <option value="" selected hidden disabled data-localize="option.label">-- Pilih salah satu
+                                --</option>
+                            <option value="Ya" data-localize="option.meeting1">Ya, saya perlu</option>
+                            <option value="Tidak" data-localize="option.meeting2">Tidak perlu</option>
                         </select>
                     </div>
                     <div class="mb-3" id="virtual_meet_next" hidden>
-                        <label class="form-label mandatory">Pilih tanggal dan jam</label>
+                        <label class="form-label mandatory" data-localize="label.meeting_next">Pilih tanggal dan
+                            jam</label>
                         <input type="datetime-local" name="datetime" id="virtual_meet_txt" class="form-control">
                     </div>
-                    <small class="form-text">Anda bisa mengatur waktu virtual meeting sesuai keinginan Anda</small>
+                    <small class="form-text" data-localize="small.meeting_next">Anda bisa mengatur waktu virtual meeting
+                        sesuai keinginan Anda</small>
                 </div>
             </div>
             <div class="col-md-6 mx-auto mb-3 text-center">
-                <button class="btn btn-primary rounded-pill mt-3 w-25 btn-submit" type="submit"
-                    id="btn-submit">Kirim</button>
-                <button class="btn btn-primary mt-3 rounded-pill w-25 btn-loading" type="button" disabled hidden>
+                <button class="btn btn-primary rounded-pill mt-3 w-25 btn-submit" type="submit" id="btn-submit"
+                    data-localize="button.submit">Kirim</button>
+                <button class="btn btn-primary mt-3 rounded-pill w-25 btn-loading" type="button" disabled hidden
+                    data-localize="button.loading">
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                     Mengirim...
                 </button>
@@ -423,18 +437,19 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header border-0">
-                    <h5 class="modal-title fw-bold" id="staticBackdropLabel">Prosedur</h5>
+                    <h5 class="modal-title fw-bold" data-localize="modal.title">Prosedur</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body pt-0">
                     <ol>
-                        <li>Klien dipersilahkan mengisi form yang disediakan.</li>
-                        <li>Klien membayar uang muka sebesar 50% dari harga yang ditetapkan.</li>
-                        <li>Tim Rongsok Design akan memberikan 3 konsep logo.</li>
-                        <li>Klien harus memilih 1 konsep logo.</li>
-                        <li>Revisi konsep logo (jika diperlukan).</li>
-                        <li>Klien membayar seluruh harga.</li>
-                        <li>Tim Rongsok Design akan mengirimkan file melalui email.</li>
+                        <li data-localize="modal.text1">Klien dipersilahkan mengisi form yang disediakan.</li>
+                        <li data-localize="modal.text2">Klien membayar uang muka sebesar 50% dari harga yang ditetapkan.
+                        </li>
+                        <li data-localize="modal.text3">Tim Rongsok Design akan memberikan 3 konsep logo.</li>
+                        <li data-localize="modal.text4">Klien harus memilih 1 konsep logo.</li>
+                        <li data-localize="modal.text5">Revisi konsep logo (jika diperlukan).</li>
+                        <li data-localize="modal.text6">Klien membayar seluruh harga.</li>
+                        <li data-localize="modal.text7">Tim Rongsok Design akan mengirimkan file melalui email.</li>
                     </ol>
                 </div>
             </div>
@@ -479,6 +494,16 @@
                 } else {
                     $("#slogan_next").attr('hidden', true);
                     $('#slogan_txt').removeAttr('required');
+                }
+            });
+            $('#industry').on('change', function () {
+                var industry = $('option:selected', this).val();
+                if (industry == "Lainnya") {
+                    $("#industry_next").removeAttr('hidden');
+                    $('#industry_txt').attr('required', true);
+                } else {
+                    $("#industry_next").attr('hidden', true);
+                    $('#industry_txt').removeAttr('required');
                 }
             });
             $('#virtual_meet').on('change', function () {

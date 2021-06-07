@@ -15,12 +15,71 @@
         "full_name": "Nama Lengkap",
         "email": "Email",
         "phone": "No. HP/ WhatsApp yang bisa dihubungi",
-        "logo_name": "Nama Logo"
+        "logo_name": "Nama Logo",
+        "slogan": "Apakah Anda memiliki slogan?",
+        "slogan_next": "Slogan",
+        "industry": "Apa bidang industri/bisnis Anda?",
+        "industry_next": "Bidang industri/bisnis Anda",
+        "feelings": "Sebutkan keinginan khusus Anda, dan juga kesan yang ingin ditampilkan dari logo Anda",
+        "product": "Jelaskan tentang audiens, organisasi, atau produk Anda",
+        "competitor": "Tuliskan 3 kompetitor pada bidang industri/bisnis Anda",
+        "use_logo": "Dimana Anda akan menggunakan logo?",
+        "type_logo": "Pilih tipe logo Anda",
+        "attribute": "Pilih atribut tampilan Anda",
+        "meeting": "Apakah Anda memerlukan pembahasan lebih detail melalui virtual meeting dengan Tim kami?",
+        "meeting_next": "Pilih tanggal dan jam"
     },
     "placeholder": {
         "full_name": "Masukkan nama lengkap Anda",
         "email": "Masukkan email Anda",
         "phone": "Masukkan no. HP Anda",
-        "logo_name": "Masukkan nama logo Anda"
+        "logo_name": "Masukkan nama logo Anda",
+        "slogan_next": "Masukkan Slogan Anda",
+        "industry_next": "Masukkan bidang industri/bisnis Anda",
+        "feelings": "Contoh : Saya ingin logo minimalis berupa burung garuda, yang berkesan modern dan futuristik",
+        "product": "Jelaskan secara singkat, jelas dan padat",
+        "competitor": "Contoh : 1. contoh (contoh.com)"
+    },
+    "option": {
+        "label": "-- Pilih salah satu --",
+        "yes": "Ya",
+        "no": "Tidak",
+        "industry1": "Makanan",
+        "industry2": "Keuangan",
+        "industry3": "Pariwisata",
+        "industry4": "Pertanian",
+        "industry5": "Pertambangan",
+        "industry6": "Lainnya",
+        "meeting1": "Ya, saya perlu",
+        "meeting2": "Tidak perlu"
+    },
+    "small": {
+        "slogan_next": "Slogan yang ingin dilengkapi di logo Anda",
+        "competitor": "Jika memungkinkan, tuliskan juga tautan kompetitor tersebut",
+        "choose": "Anda bisa memilih lebih dari satu",
+        "type_logo": "Belum muncul gambar? <a href='javascript:history.go(0)' class='text-decoration-none'>Segarkan</a>",
+        "attribute": "Geser tombol untuk mendeskripsikan keinginan tampilan pada logo Anda",
+        "meeting_next": "Anda bisa mengatur waktu virtual meeting sesuai keinginan Anda"
+    },
+    "checkbox": {
+        "use_logo1": "Barang dagangan (cangkir, kaos, dll.)",
+        "use_logo2": "Online (situs web, iklan online, dll.)",
+        "use_logo3": "Cetak (kartu nama, kop surat, brosur, dll.)",
+        "use_logo4": "Rambu (toko, papan iklan, dll.)",
+        "use_logo5": "Televisi atau layar"
+    },
+    "button": {
+        "submit": "Kirim",
+        "loading": "<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'></span> Mengirim..."
+    },
+    "modal": {
+        "title": "Prosedur",
+        "text1": "Klien dipersilahkan mengisi form yang disediakan.",
+        "text2": "Klien membayar uang muka sebesar 50% dari harga yang ditetapkan.",
+        "text3": "Tim kami akan memberikan 3 konsep logo.",
+        "text4": "Klien harus memilih 1 konsep logo.",
+        "text5": "Revisi konsep logo (jika diperlukan).",
+        "text6": "Klien membayar seluruh harga.",
+        "text7": "Tim kami akan mengirimkan file melalui email."
     }
 }
