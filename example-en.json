@@ -59,7 +59,8 @@
         "choose": "You can choose more than one",
         "type_logo": "No image yet?? <a href='javascript:history.go(0)' class='text-decoration-none'>Refresh</a>",
         "attribute": "Slide the button to describe how you want your logo to look",
-        "meeting_next": "You can set the virtual meeting time according to your wishes"
+        "meeting_next": "You can set the virtual meeting time according to your wishes",
+        "logo_name": "Desired name for your logo"
     },
     "checkbox": {
         "use_logo1": "Merchandise (mug, T-shirt, etc.)",

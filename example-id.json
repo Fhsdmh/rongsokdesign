@@ -59,7 +59,8 @@
         "choose": "Anda bisa memilih lebih dari satu",
         "type_logo": "Belum muncul gambar? <a href='javascript:history.go(0)' class='text-decoration-none'>Segarkan</a>",
         "attribute": "Geser tombol untuk mendeskripsikan keinginan tampilan pada logo Anda",
-        "meeting_next": "Anda bisa mengatur waktu virtual meeting sesuai keinginan Anda"
+        "meeting_next": "Anda bisa mengatur waktu virtual meeting sesuai keinginan Anda",
+        "logo_name": "Nama yang diinginkan untuk logo Anda"
     },
     "checkbox": {
         "use_logo1": "Barang dagangan (cangkir, kaos, dll.)",
