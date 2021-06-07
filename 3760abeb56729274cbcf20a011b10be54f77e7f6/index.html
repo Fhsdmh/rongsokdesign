@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rongsok Design" />
+    <meta property="og:url" content="design.rongsok.id" />
+    <meta property="og:description" content="Rongsok Design" />
+    <meta name="description" content="Rongsok Design" />
+    <meta name="author" content="Rongsok Developers" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico">
+
+    <title>Rongsok Design</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="../assets/img/logo.svg" alt="logo" width="40" height="40" class="align-middle">
+                Rongsok Design
+            </a>
+            <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="animated-icon"><span></span><span></span><span></span></div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active border-bottom" href="index.html">Beranda</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <h5>Clients</h5>
+                <hr class="mt-0 mb-4">
+                <div id="show_data">
+                    <h6 class="text-danger text-center">Tidak ada data</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var cust_redir = Cookies.get('rongsok');
+            if (cust_redir == undefined) {
+                window.location = '../admin.html'
+            }
+        });
+        var rongsok_form =
+            "aHR0cHM6Ly9hcGkubnBvaW50LmlvLzc2Mjg3ZTQ5Y2ZlMGM0OGQ3YmNi";
+        var rongsok_design = atob(rongsok_form);
+
+        $.getJSON(rongsok_design,
+            function (response) {
+                var len = response.length;
+                var show_data = $('#show_data');
+                show_data.empty();
+                for (var i = 0; i < len; i++) {
+                    var name = response[i]['name'];
+                    var check = response[i]['check'];
+                    show_data.append(
+                        "<div class='card border-0 mb-3 shadow-sm'><div class='card-body p-0'><div class='list-group'><a href='" +
+                        check +
+                        ".html' class='list-group-item d-flex justify-content-between align-items-center'><div class='text-truncate me-2'><img src='https://ui-avatars.com/api/?name=" +
+                        name +
+                        "&background=random&bold=true' alt='avatar' class='rounded-circle me-2' width='40' height='40'><span>" +
+                        name + "</span></div><i class='fas fa-chevron-right'></i></a></div></div></div>"
+                    );
+                }
+            }
+        );
+    </script>
+</body>
+
+</html>

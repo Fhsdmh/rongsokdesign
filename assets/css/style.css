@@ -154,3 +154,15 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+
+.form-control:disabled {
+    background: white !important;
+}
+
+textarea:disabled {
+    background: white !important;
+}
+
+select:disabled {
+    background: white !important;
+}
