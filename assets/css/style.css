@@ -134,3 +134,23 @@ textarea {
     content: " *";
     color: #dc3545 !important;
 }
+
+.slider-selection {
+    background-color: #0c1e2d !important;
+    background-image: none !important;
+}
+
+.slider-track-low,
+.slider-track-high {
+    background-color: #9da5ab !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

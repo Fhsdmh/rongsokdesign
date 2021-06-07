@@ -84,5 +84,10 @@
         "li5": "Revision of the logo concept (if needed)",
         "li6": "The client pays the entire price",
         "li7": "The Rongsok Design Team will send the file via email"
+    },
+    "success": {
+        "title": "Thank You!",
+        "text": "We have received your message, <br> We will contact you via WhatsApp for more info.",
+        "button": "Back"
     }
 }

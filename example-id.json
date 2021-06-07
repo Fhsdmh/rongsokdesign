@@ -1,88 +1,26 @@
 {
-    "dropdown-toggle": "ID",
-    "data-title": "Form Preferensi Pelanggan",
-    "card-text1": "<label class='mandatory'></label> Wajib diisi",
-    "card-text2": "Mekanisme pemesanan logo <a href='#modal-mekanisme' class='text-decoration-none' data-bs-toggle='modal'>Baca</a>",
-    "card-text3": "Kontak : <a href='https://wa.me/message/YFDJVB5MT6JAG1' class='text-decoration-none' target='_blank'>+6281212818612</a>",
-    "name": {
-        "label": "Nama Lengkap",
-        "placeholder": "Masukkan nama lengkap Anda"
+    "languange": "ID",
+    "success": {
+        "title": "Terima Kasih!",
+        "text": "Pesan Anda telah kami terima, <br> Kami akan menghubungi Anda melalui WhatsApp untuk info lebih lanjut.",
+        "button": "Kembali"
     },
-    "email": {
-        "label": "Email",
-        "placeholder": "Masukkan email Anda"
+    "form": {
+        "title": "Form Preferensi Pelanggan",
+        "text1": "<label class='mandatory'></label> Wajib diisi",
+        "text2": "Prosedur pemesanan logo <a href='#modal-mekanisme' class='text-decoration-none' data-bs-toggle='modal'>Baca</a>",
+        "text3": "Kontak? <a data-bs-toggle='collapse' href='#collapse' role='button' aria-expanded='false' aria-controls='collapse' class='text-decoration-none'>Klik disini</a>"
     },
-    "logo": {
-        "label": "Nama Logo",
-        "placeholder": "Masukkan nama logo Anda",
-        "small": "Nama yang diinginkan untuk logo Anda"
+    "label": {
+        "full_name": "Nama Lengkap",
+        "email": "Email",
+        "phone": "No. HP/ WhatsApp yang bisa dihubungi",
+        "logo_name": "Nama Logo"
     },
-    "slogan": {
-        "label": "Apakah Anda memiliki slogan?",
-        "option1": "-- Pilih salah satu --",
-        "option2": "Ya",
-        "option3": "Tidak"
-    },
-    "slogan-next": {
-        "label": "Nama Slogan",
-        "placeholder": "Masukkan slogan Anda",
-        "small": "Slogan yang ingin dilengkapi di logo Anda"
-    },
-    "industry": {
-        "label": "Apa bidang industri Anda?",
-        "option1": "-- Pilih salah satu --",
-        "option2": "Makanan",
-        "option3": "Keuangan",
-        "option4": "Pariwisata",
-        "option5": "Pertanian",
-        "option6": "Pertambangan",
-        "option7": "Lainnya"
-    },
-    "feelings": {
-        "label": "Pilih konsep pada logo Anda",
-        "label1": "Modern",
-        "label2": "Futuristik",
-        "label3": "Tradisional",
-        "label4": "Sederhana",
-        "small": "Anda bisa memilih lebih dari satu"
-    },
-    "product": {
-        "label": "Jelaskan tentang audiens, organisasi atau produk Anda",
-        "placeholder": "Jelaskan secara singkat, jelas dan padat"
-    },
-    "competitor": {
-        "label": "Tuliskan 3 kompetitor pada bidang industri Anda",
-        "placeholder": "1. contoh (www.contoh.com)",
-        "small": "Jika memungkinkan, tuliskan juga tautan kompetitor tersebut"
-    },
-    "use-logo": {
-        "label": "Dimana Anda akan menggunakan logo?",
-        "label1": "Barang dagangan (cangkir, kaos, dll.)",
-        "label2": "Online (situs web, iklan online, dll.)",
-        "label3": "Cetak (kartu nama, kop surat, brosur, dll.)",
-        "label4": "Rambu (toko, papan iklan, dll.)",
-        "label5": "Televisi atau layar"
-    },
-    "type-logo": {
-        "label": "Pilih tipe logo Anda?",
-        "label1": "Wordmark",
-        "label2": "Pictorial Marks",
-        "label3": "Abstract Marks",
-        "label4": "Mascot",
-        "label5": "Combination Mark",
-        "label6": "Emblem",
-        "label7": "Other"
-    },
-    "submit": {
-        "label": "Kirim"
-    },
-    "modal": {
-        "li1": "Klien mengisi form",
-        "li2": "Klien membayar DP sebesar 50% dari harga yang ditetapkan",
-        "li3": "Tim Rongsok Design akan memberikan 3 konsep logo",
-        "li4": "Klien harus memilih 1 konsep logo",
-        "li5": "Revisi konsep logo (jika diperlukan)",
-        "li6": "Klien membayar seluruh harga",
-        "li7": "Tim Rongsok Design akan mengirimkan file melalui email"
+    "placeholder": {
+        "full_name": "Masukkan nama lengkap Anda",
+        "email": "Masukkan email Anda",
+        "phone": "Masukkan no. HP Anda",
+        "logo_name": "Masukkan nama logo Anda"
     }
 }
