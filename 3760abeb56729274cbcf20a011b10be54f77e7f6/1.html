@@ -42,6 +42,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Beranda</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link logout" href="../admin.html">Logout</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -343,6 +346,11 @@
             if (cust_redir == undefined) {
                 window.location = '../admin.html'
             }
+
+            $(".logout").on('click', function () {
+                Cookies.remove('rongsok');
+            })
+
             $(".form-control").attr('disabled', 'disabled');
             // $(".form-check-input").attr('disabled', true);
             $("textarea").attr('disabled', 'disabled');

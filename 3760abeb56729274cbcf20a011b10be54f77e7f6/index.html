@@ -40,6 +40,9 @@
                     <li class="nav-item">
                         <a class="nav-link active border-bottom" href="index.html">Beranda</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link logout" href="../admin.html">Logout</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -72,6 +75,10 @@
             if (cust_redir == undefined) {
                 window.location = '../admin.html'
             }
+
+            $(".logout").on('click', function () {
+                Cookies.remove('rongsok');
+            })
         });
         var rongsok_form =
             "aHR0cHM6Ly9hcGkubnBvaW50LmlvLzc2Mjg3ZTQ5Y2ZlMGM0OGQ3YmNi";
