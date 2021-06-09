@@ -28,7 +28,7 @@
 <body>
     <section style="height: 100vh;">
         <div class="container h-100">
-            <div class="ph-item p-0 border-0 row justify-content-center align-items-center h-100 loader" hidden>
+            <div class="ph-item p-0 border-0 row justify-content-center align-items-center h-100 loader">
                 <div class="col-md-8 d-none d-md-block">
                     <div class="ph-picture big" style="height: 300px;"></div>
                 </div>
@@ -100,7 +100,7 @@
 
     <nav class="navbar fixed-bottom navbar-white bg-white">
         <div class="container">
-            <div class="mx-auto">
+            <div class="mx-auto content" hidden>
                 <small class="text-muted">&#169; 2021 - Pengarsipan Surat</small>
             </div>
         </div>
@@ -116,47 +116,51 @@
     <script src="assets/js/scripts.js"></script>
 
     <script>
-    $(document).ready(function() {
-        $(function() {
+        $(document).ready(function () {
             $('.content').removeAttr('hidden');
             $('.loader').attr('hidden', true);
-            $(window).on('beforeunload', function() {
-                $('.content').attr('hidden', true);
-                $('.loader').removeAttr('hidden');
+
+            function show() {
+                $('.content').removeAttr('hidden');
+                $('.loader').attr('hidden', true);
+            }
+
+            $(window).on('beforeunload', function () {
+                setTimeout(show, 1000);
+            });
+
+            $("#email").keypress(function () {
+                $("#email").removeClass("is-invalid");
+                $(".email-error").attr("hidden", true);
+            });
+            $("#password").keypress(function () {
+                $("#password").removeClass("is-invalid");
+                $(".password-error").attr("hidden", true);
             });
         });
-        $("#email").keypress(function() {
-            $("#email").removeClass("is-invalid");
-            $(".email-error").attr("hidden", true);
-        });
-        $("#password").keypress(function() {
-            $("#password").removeClass("is-invalid");
-            $(".password-error").attr("hidden", true);
-        });
-    });
 
-    function validate() {
-        if (!$('#email').val() || !$('#password').val()) {
-            $("#email").addClass("is-invalid");
-            $(".email-error").removeAttr("hidden");
-            $("#password").addClass("is-invalid");
-            $(".password-error").removeAttr("hidden");
-            return false;
-        } else {
-            return true;
+        function validate() {
+            if (!$('#email').val() || !$('#password').val()) {
+                $("#email").addClass("is-invalid");
+                $(".email-error").removeAttr("hidden");
+                $("#password").addClass("is-invalid");
+                $(".password-error").removeAttr("hidden");
+                return false;
+            } else {
+                return true;
+            }
         }
-    }
 
-    function show() {
-        var x = document.getElementById("password");
-        if (x.type === "password") {
-            x.type = "text";
-        } else {
-            x.type = "password";
+        function show() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
         }
-    }
 
-    $('#form').submit(validate);
+        $('#form').submit(validate);
     </script>
 </body>
 
