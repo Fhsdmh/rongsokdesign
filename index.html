@@ -116,18 +116,23 @@
     <script src="assets/js/scripts.js"></script>
 
     <script>
-        $(document).ready(function () {
-            setTimeout(show, 1000);
+        (function () {
+            window.setTimeout(show, 1000);
+
+            var loader = document.getElementsByClassName("loader");
+            var content = document.getElementsByClassName("content");
 
             function show() {
-                $('.content').removeAttr('hidden');
-                $('.loader').attr('hidden', true);
+                content[0].removeAttribute("hidden");
+                loader[0].setAttribute("hidden", true);
             }
 
             $(window).on('beforeunload', function () {
-                setTimeout(show, 1000);
+                window.setTimeout(show, 1000);
             });
+        })();
 
+        $(document).ready(function () {
             $("#email").keypress(function () {
                 $("#email").removeClass("is-invalid");
                 $(".email-error").attr("hidden", true);
