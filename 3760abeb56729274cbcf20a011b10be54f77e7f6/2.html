@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rongsok Design" />
+    <meta property="og:url" content="design.rongsok.id" />
+    <meta property="og:description" content="Rongsok Design" />
+    <meta name="description" content="Rongsok Design" />
+    <meta name="author" content="Rongsok Developers" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico">
+
+    <title>Rongsok Design</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="../assets/img/logo.svg" alt="logo" width="40" height="40" class="align-middle">
+                Rongsok Design
+            </a>
+            <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="animated-icon"><span></span><span></span><span></span></div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link logout" href="../admin.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <form name="rongsok-design-form" id="rongsok-design-form">
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label mandatory">Nama Lengkap</label>
+                        <input type="text" id="full_name" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label mandatory">Nama Logo</label>
+                        <input type="text" id="logo_name" class="form-control">
+                        <div class="form-text">Nama yang diinginkan untuk logo Anda</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label mandatory">Apakah Anda memiliki
+                            slogan?</label>
+                        <select class="form-select" id="slogan">
+                            <option value="" selected hidden disabled>-- Pilih salah satu --</option>
+                            <option value="Ya">Ya</option>
+                            <option value="Tidak">Tidak</option>
+                        </select>
+                    </div>
+                    <div class="mb-3" id="slogan_next" hidden>
+                        <label class="form-label mandatory">Slogan</label>
+                        <textarea class="form-control" id="slogan_txt" rows="3"></textarea>
+                        <div class="form-text">Slogan yang ingin dilengkapi di logo Anda</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label mandatory">Apa bidang industri/bisnis Anda?</label>
+                        <select class="form-select" id="industry">
+                            <option value="" selected hidden disabled>-- Pilih salah satu --</option>
+                            <option value="Makanan">Makanan</option>
+                            <option value="Keuangan">Keuangan</option>
+                            <option value="Pariwisata">Pariwisata</option>
+                            <option value="Pertanian">Pertanian</option>
+                            <option value="Pertambangan">Pertambangan</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="mb-3" id="industry_next" hidden>
+                        <label class="form-label mandatory">Bidang industri/bisnis Anda</label>
+                        <textarea class="form-control" id="industry_txt" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label mandatory">Sebutkan keinginan
+                            khusus Anda, dan juga kesan yang ingin ditampilkan dari logo Anda</label>
+                        <textarea class="form-control" id="feelings" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label mandatory">Jelaskan tentang audiens, organisasi, atau produk
+                            Anda</label>
+                        <textarea class="form-control" id="product" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label mandatory">Tuliskan 3 kompetitor
+                            pada bidang industri/bisnis Anda</label>
+                        <textarea class="form-control" id="competitor" rows="3"></textarea>
+                        <div class="form-text">Jika memungkinkan, tuliskan juga tautan kompetitor tersebut</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label mandatory d-block">Dimana Anda akan menggunakan logo?</label>
+                        <div class="form-check">
+                            <input class="form-check-input use_logo" id="merchandise" type="checkbox"
+                                value="merchandise" autocomplete="off" disabled>
+                            <label class="form-check-label" for="merchandise">Barang dagangan (cangkir, kaos,
+                                dll.)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input use_logo" id="online" type="checkbox" value="online"
+                                autocomplete="off" disabled>
+                            <label class="form-check-label" for="online">Online (situs web, iklan online, dll.)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input use_logo" id="cetak" type="checkbox" value="cetak"
+                                autocomplete="off" disabled>
+                            <label class="form-check-label" for="cetak">Cetak (kartu nama, kop surat, brosur,
+                                dll.)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input use_logo" id="signage" type="checkbox" value="signage"
+                                autocomplete="off" disabled>
+                            <label class="form-check-label" for="signage">Rambu toko, papan iklan, dll.)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input use_logo" id="televisi" type="checkbox" value="televisi"
+                                autocomplete="off" disabled>
+                            <label class="form-check-label" for="televisi">Televisi atau layar</label>
+                        </div>
+                    </div>
+                    <div class="form-text">Anda bisa memilih lebih dari satu</div>
+                </div>
+            </div>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <label class="form-label mandatory">Pilih tipe logo Anda</label>
+                    <small class="d-block">Belum muncul gambar? <a href="javascript:history.go(0)"
+                            class="text-decoration-none">Segarkan</a></small>
+                    <small class="form-text d-block mb-3">Anda bisa memilih lebih dari satu</small>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-check p-0">
+                                <input class="btn-check type_logo" type="checkbox" value="letter" id="letter"
+                                    autocomplete="off" disabled>
+                                <label class="btn btn-outline-secondary card mb-4" for="letter">
+                                    <img src="../assets/img/ibm.png" alt="logo-check-select" width="100" height="100"
+                                        class="d-block mx-auto">
+                                    Letter
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-check p-0">
+                                <input class="btn-check type_logo" type="checkbox" value="wordmark" autocomplete="off"
+                                    id="wordmark" disabled>
+                                <label class="btn btn-outline-secondary card mb-4" for="wordmark">
+                                    <img src="../assets/img/coca-cola.png" alt="logo-check-select" width="100"
+                                        height="100" class="d-block mx-auto">
+                                    Wordmark
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-check p-0">
+                                <input class="btn-check type_logo" type="checkbox" value="pictorial" autocomplete="off"
+                                    id="pictorial" disabled>
+                                <label class="btn btn-outline-secondary card mb-4" for="pictorial">
+                                    <img src="../assets/img/twitter.png" alt="logo-check-select" width="100"
+                                        height="100" class="d-block mx-auto">
+                                    Pictorial Marks
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-check p-0">
+                                <input class="btn-check type_logo" type="checkbox" value="abstract" autocomplete="off"
+                                    id="abstract" disabled>
+                                <label class="btn btn-outline-secondary card mb-4" for="abstract">
+                                    <img src="../assets/img/pepsi.png" alt="logo-check-select" width="100" height="100"
+                                        class="d-block mx-auto">
+                                    Abstract Marks
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-check p-0">
+                                <input class="btn-check type_logo" type="checkbox" value="mascot" autocomplete="off"
+                                    id="mascot" disabled>
+                                <label class="btn btn-outline-secondary card mb-4" for="mascot">
+                                    <img src="../assets/img/kfc.png" alt="logo-check-select" width="100" height="100"
+                                        class="d-block mx-auto">
+                                    Mascot
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-check p-0">
+                                <input class="btn-check type_logo" type="checkbox" value="combination"
+                                    autocomplete="off" id="combination" disabled>
+                                <label class="btn btn-outline-secondary card mb-4" for="combination">
+                                    <img src="../assets/img/burger-king.png" alt="logo-check-select" width="100"
+                                        height="100" class="d-block mx-auto">
+                                    Combination Mark
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-check p-0">
+                                <input class="btn-check type_logo" type="checkbox" value="emblem" autocomplete="off"
+                                    id="emblem" disabled>
+                                <label class="btn btn-outline-secondary card mb-4" for="emblem">
+                                    <img src="../assets/img/starbucks.png" alt="logo-check-select" width="100"
+                                        height="100" class="d-block mx-auto">
+                                    Emblem
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <label>Pilih atribut tampilan Anda</label>
+                    <small class="d-block form-text">Geser tombol untuk mendeskripsikan keinginan tampilan pada logo
+                        Anda</small>
+                    <div class="mb-3 justify-content-between d-flex mt-3">
+                        <span class="me-2 text-break" style="width: 4rem;">Modern</span>
+                        <input class="custom_slider_boot" id="modern_classic" type="text" data-slider-min="0"
+                            data-slider-max="10" data-slider-step="1">
+                        <span class="ms-2 text-break" style="width: 4rem;">Classic</span>
+                    </div>
+                    <div class="mb-3 justify-content-between d-flex mt-3">
+                        <span class="me-2 text-break" style="width: 4rem;">Youthful</span>
+                        <input class="custom_slider_boot" id="youthful_mature" type="text" data-slider-min="0"
+                            data-slider-max="10" data-slider-step="1" data-slider-value="5">
+                        <span class="ms-2 text-break" style="width: 4rem;">Mature</span>
+                    </div>
+                    <div class="mb-3 justify-content-between d-flex mt-3">
+                        <div class="me-2 text-break" style="width: 4rem;">Feminine</div>
+                        <input class="custom_slider_boot" id="feminine_masculine" type="text" data-slider-min="0"
+                            data-slider-max="10" data-slider-step="1" data-slider-value="5">
+                        <div class="ms-2 text-break" style="width: 4rem;">Masculine</div>
+                    </div>
+                    <div class="mb-3 justify-content-between d-flex mt-3">
+                        <div class="me-2 text-break" style="width: 4rem;">Playful</div>
+                        <input class="custom_slider_boot" id="playful_sophisticated" type="text" data-slider-min="0"
+                            data-slider-max="10" data-slider-step="1" data-slider-value="5">
+                        <div class="ms-2 text-break" style="width: 4rem;">Sophisticated</div>
+                    </div>
+                    <div class="mb-3 justify-content-between d-flex mt-3">
+                        <span class="me-2 text-break" style="width: 4rem;">Luxurious</span>
+                        <input class="custom_slider_boot" id="luxurious_economical" type="text" data-slider-min="0"
+                            data-slider-max="10" data-slider-step="1" data-slider-value="5">
+                        <span class="ms-2 text-break" style="width: 4rem;">Economical</span>
+                    </div>
+                    <div class="mb-3 justify-content-between d-flex mt-3">
+                        <span class="me-2 text-break" style="width: 4rem;">Loud</span>
+                        <input class="custom_slider_boot" id="loud_quiet" type="text" data-slider-min="0"
+                            data-slider-max="10" data-slider-step="1" data-slider-value="5">
+                        <span class="ms-2 text-break" style="width: 4rem;">Quiet</span>
+                    </div>
+                    <div class="mb-3 justify-content-between d-flex mt-3">
+                        <span class="me-2 text-break" style="width: 4rem;">Simple</span>
+                        <input class="custom_slider_boot" id="simple_complex" type="text" data-slider-min="0"
+                            data-slider-max="10" data-slider-step="1" data-slider-value="5">
+                        <span class="ms-2 text-break" style="width: 4rem;">Complex</span>
+                    </div>
+                    <div class="mb-3 justify-content-between d-flex mt-3">
+                        <span class="me-2 text-break" style="width: 4rem;">Subtle</span>
+                        <input class="custom_slider_boot" id="subtle_obvious" type="text" data-slider-min="0"
+                            data-slider-max="10" data-slider-step="1" data-slider-value="5">
+                        <span class="ms-2 text-break" style="width: 4rem;">Obvious</span>
+                    </div>
+                    <div class="mb-3 justify-content-between d-flex mt-3">
+                        <span class="me-2 text-break" style="width: 4rem;">Geometric</span>
+                        <input class="custom_slider_boot" id="geometric_organic" type="text" data-slider-min="0"
+                            data-slider-max="10" data-slider-step="1" data-slider-value="5">
+                        <span class="ms-2 text-break" style="width: 4rem;">Organic</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-6 mx-auto shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="mb-3" id="virtual_meet_next">
+                        <label class="form-label mandatory">Virtual Meet</label>
+                        <input type="text" name="datetime" id="virtual_meet" class="form-control">
+                    </div>
+                    <small class="form-text">Anda bisa mengatur waktu virtual meeting sesuai keinginan Anda</small>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var cust_redir = Cookies.get('rongsok');
+            if (cust_redir == undefined) {
+                window.location = '../admin.html'
+            }
+
+            $(".logout").on('click', function () {
+                Cookies.remove('rongsok');
+            })
+
+            $(".form-control").attr('disabled', 'disabled');
+            // $(".form-check-input").attr('disabled', true);
+            $("textarea").attr('disabled', 'disabled');
+            $("select").attr('disabled', 'disabled');
+            $('.custom_slider_boot').slider({
+                tooltip: 'hide'
+            });
+            $('.custom_slider_boot').slider("disable");
+
+            var rongsok_form =
+                "aHR0cHM6Ly9hcGkubnBvaW50LmlvLzE0ZGE0MjkwMDg2MWNjNDUxZjkw";
+            var rongsok_design = atob(rongsok_form);
+
+            $.getJSON(rongsok_design,
+                function (response) {
+                    var full_name = response.full_name;
+                    var logo_name = response.logo_name;
+                    var slogan = response.slogan;
+                    var slogan_next = response.slogan_next;
+                    var industry = response.industry;
+                    var industry_next = response.industry_next;
+                    var feelings = response.feelings;
+                    var product = response.product;
+                    var competitor = response.competitor;
+                    var use_logo = response.use_logo;
+                    var split_use_logo = use_logo.split(", ");
+                    var type_logo = response.type_logo;
+                    var split_type_logo = type_logo.split(", ");
+                    var modern_classic = response.modern_classic;
+                    var youthful_mature = response.youthful_mature;
+                    var feminine_masculine = response.feminine_masculine;
+                    var playful_sophisticated = response.playful_sophisticated;
+                    var luxurious_economical = response.luxurious_economical;
+                    var loud_quiet = response.loud_quiet;
+                    var simple_complex = response.simple_complex;
+                    var subtle_obvious = response.subtle_obvious;
+                    var geometric_organic = response.geometric_organic;
+                    var virtual_meet = response.virtual_meet;
+                    $("#full_name").val(response.full_name);
+                    $("#logo_name").val(response.logo_name);
+                    if (slogan == "Ya") {
+                        $("#slogan_next").removeAttr("hidden");
+                        $("#slogan").val(slogan);
+                        $("#slogan_txt").val(slogan_next);
+                    } else {
+                        $("#slogan").val(slogan);
+                        $("#slogan_next").attr("hidden", true);
+                    }
+                    if (industry == "Lainnya") {
+                        $("#industry_next").removeAttr("hidden");
+                        $("#industry").val(industry);
+                        $("#industry_txt").val(industry_next);
+                    } else {
+                        $("#industry").val(industry);
+                        $("#industry_next").attr("hidden", true);
+                    }
+                    $("#feelings").val(response.feelings);
+                    $("#product").val(response.product);
+                    $("#competitor").val(response.competitor);
+                    for (let i = 0; i < split_use_logo.length; i++) {
+                        var str = split_use_logo[i];
+                        if (str == "merchandise") {
+                            $("#merchandise").attr("checked", true);
+                        } else if (str == "online") {
+                            $("#online").attr("checked", true);
+                        } else if (str == "cetak") {
+                            $("#cetak").attr("checked", true);
+                        } else if (str == "signage") {
+                            $("#signage").attr("checked", true);
+                        } else {
+                            $("#televisi").attr("checked", true);
+                        }
+                    }
+                    for (let i = 0; i < split_type_logo.length; i++) {
+                        var str = split_type_logo[i];
+                        if (str == "letter") {
+                            $("#letter").attr("checked", true);
+                        } else if (str == "wordmark") {
+                            $("#wordmark").attr("checked", true);
+                        } else if (str == "pictorial") {
+                            $("#pictorial").attr("checked", true);
+                        } else if (str == "abstract") {
+                            $("#abstract").attr("checked", true);
+                        } else if (str == "mascot") {
+                            $("#mascot").attr("checked", true);
+                        } else if (str == "combination") {
+                            $("#combination").attr("checked", true);
+                        } else {
+                            $("#emblem").attr("checked", true);
+                        }
+                    }
+                    $("#modern_classic").slider('setValue', modern_classic, true);
+                    $("#youthful_mature").slider('setValue', youthful_mature, true);
+                    $("#feminine_masculine").slider('setValue', feminine_masculine, true);
+                    $("#playful_sophisticated").slider('setValue', playful_sophisticated, true);
+                    $("#luxurious_economical").slider('setValue', luxurious_economical, true);
+                    $("#loud_quiet").slider('setValue', loud_quiet, true);
+                    $("#simple_complex").slider('setValue', simple_complex, true);
+                    $("#subtle_obvious").slider('setValue', subtle_obvious, true);
+                    $("#geometric_organic").slider('setValue', geometric_organic, true);
+                    $("#virtual_meet").val(virtual_meet);
+                }
+            );
+        });
+    </script>
+</body>
+
+</html>
